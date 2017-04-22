@@ -87,6 +87,9 @@
     <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Commands.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.BuiltIn.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\System.Collections.Generic.uml">
       <SubType>Content</SubType>
     </Content>

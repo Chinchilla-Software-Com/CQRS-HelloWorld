@@ -86,5 +86,11 @@
         LastKnownName="Akka"
         LastKnownLocation="HelloWorld.Domain.Akka.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8c530b33-7405-463c-9ccb-955c30e3d3b6"
+        LastKnownName="BuiltIn"
+        LastKnownLocation="HelloWorld.Domain.BuiltIn.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>
