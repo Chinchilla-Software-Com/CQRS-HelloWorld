@@ -170,7 +170,7 @@ This is where things end</body>
         </appliedStereotypesInternal>
         <elementDefinition Id="7667a4d6-ef9f-4be2-b208-b6107981575b" />
         <targetEnds>
-          <association Id="d87afe54-a55d-40a8-8ac7-428ad5a5cf34" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SaeHelloWorld" isAbstract="false">
+          <association Id="d87afe54-a55d-40a8-8ac7-428ad5a5cf34" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SayHelloWorld" isAbstract="false">
             <classMoniker Id="24a3e792-3633-4468-83b0-d91e98234c7e" LastKnownName="HelloWorld" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>

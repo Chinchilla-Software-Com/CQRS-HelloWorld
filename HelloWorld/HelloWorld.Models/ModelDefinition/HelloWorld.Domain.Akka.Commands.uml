@@ -68,7 +68,7 @@
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
-            name="SaeHelloWorld"
+            name="SayHelloWorld"
             isAbstract="false">
             <classMoniker
               Id="b09b8e49-1f7f-466c-94a2-6ec7d8b3e936"
