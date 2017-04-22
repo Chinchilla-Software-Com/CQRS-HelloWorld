@@ -13,7 +13,7 @@
     <packageHasNamedElement>
       <class
         Id="b09b8e49-1f7f-466c-94a2-6ec7d8b3e936"
-        name="HelloWorld"
+        name="HelloWorldExample"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">

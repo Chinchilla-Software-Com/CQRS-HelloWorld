@@ -179,7 +179,7 @@ Daily report instantly updated</body>
         <elementDefinition Id="7667a4d6-ef9f-4be2-b208-b6107981575b" />
         <targetEnds>
           <association Id="aeaceabb-e8a1-49cc-9872-aca528c29c80" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SayHelloWorld" isAbstract="false">
-            <classMoniker Id="8c5d96f8-36ae-461a-886c-be78b07665e6" LastKnownName="HelloWorld" />
+            <classMoniker Id="8c5d96f8-36ae-461a-886c-be78b07665e6" LastKnownName="HelloWorldExample" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="46173e11-50dc-4a2f-8b5b-761fe5ce5e44" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -224,7 +224,7 @@ Daily report instantly updated</body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8c5d96f8-36ae-461a-886c-be78b07665e6" name="HelloWorld" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8c5d96f8-36ae-461a-886c-be78b07665e6" name="HelloWorldExample" isAbstract="false" isLeaf="false" isActiveClass="false">
         <appliedStereotypesInternal>
           <stereotypeInstance Id="1105f154-795b-4d3f-aa71-6e785e59264c" name="AggregateRoot" profile="CqrsProfile">
             <elementDefinition Id="5d72cb71-e641-4f43-bc60-2682d6c0c613" />
@@ -561,7 +561,7 @@ Daily report instantly updated</body>
         <elementDefinition Id="ca2e1514-949f-4cba-b486-b10922b6b643" />
         <targetEnds>
           <association Id="2712e810-df5f-4229-a535-f726d3065ad4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="ReplyToHelloWorld" isAbstract="false">
-            <classMoniker Id="8c5d96f8-36ae-461a-886c-be78b07665e6" LastKnownName="HelloWorld" />
+            <classMoniker Id="8c5d96f8-36ae-461a-886c-be78b07665e6" LastKnownName="HelloWorldExample" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="a82956fd-4f8b-4c89-9360-6d8f8eb3c7c7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -648,7 +648,7 @@ Daily report instantly updated</body>
         <elementDefinition Id="25aa0b15-85fd-4f2d-980e-4091041661c1" />
         <targetEnds>
           <association Id="5641ca50-e017-422e-a418-25e2fc4ac30a" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="EndConversation" isAbstract="false">
-            <classMoniker Id="8c5d96f8-36ae-461a-886c-be78b07665e6" LastKnownName="HelloWorld" />
+            <classMoniker Id="8c5d96f8-36ae-461a-886c-be78b07665e6" LastKnownName="HelloWorldExample" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="936f472f-4678-45db-b038-c196f9b5bcc4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
