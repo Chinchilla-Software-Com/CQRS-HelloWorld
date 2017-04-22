@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1508c16f-f0a2-42c9-bce5-8893d686417e" name="HelloWorld" linkedPackageId="91543a8e-2090-4421-9c99-fe7e6eeb2b4c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="8581db43-875b-4b87-bac5-997bc346baf4">
+      <elementDefinition Id="a5d0c4ea-a919-42e3-855f-19ad54cb9d77" />
+      <body>Step 1
+This is where things start</body>
+      <annotatedElements>
+        <classMoniker Id="006699ff-2c48-4a8a-924a-2a65f59ddce5" LastKnownName="SayHelloWorld" />
+      </annotatedElements>
+    </comment>
+    <comment Id="1d72297d-b43f-495f-8f48-18f4893b0d63">
+      <elementDefinition Id="51ab3cd7-b92f-455d-9551-1a6e9f6b3982" />
+      <body>Step 2
+First response</body>
+      <annotatedElements>
+        <classMoniker Id="cacb5bc1-9a45-431e-bd17-3b8a844b238b" LastKnownName="ReplyToHelloWorld" />
+      </annotatedElements>
+    </comment>
+    <comment Id="1e9e4813-ede3-496a-bce0-d1a3f33a9a91">
+      <elementDefinition Id="6eb00116-9fd8-4af6-8834-3022630ba464" />
+      <body>Step 1
+First event raised</body>
+      <annotatedElements>
+        <classMoniker Id="726e74a5-0186-48fa-a06f-6923913ea8dc" LastKnownName="HelloWorldSaid" />
+      </annotatedElements>
+    </comment>
+    <comment Id="fdc6e720-4332-473d-86d6-349ef59478eb">
+      <elementDefinition Id="1fb9a8e3-883e-4e49-b6f4-e64bf2344596" />
+      <body>Step 2
+Second event raised</body>
+      <annotatedElements>
+        <classMoniker Id="56d4b755-b016-4c35-a8a5-cce25ca51208" LastKnownName="HelloWorldRepliedTo" />
+      </annotatedElements>
+    </comment>
+    <comment Id="11dc6c71-0a7e-45bc-ab3f-250b739ae692">
+      <elementDefinition Id="7a7e7f22-7326-4143-a0a6-4c917fcf32b7" />
+      <body>Step 3
+Second Response</body>
+      <annotatedElements>
+        <classMoniker Id="fe054964-f542-4aa9-87ea-f6051c0435f3" LastKnownName="EndConversation" />
+      </annotatedElements>
+    </comment>
+    <comment Id="1c7ac07c-9cd4-4e9d-ac3a-92dd552fc385">
+      <elementDefinition Id="5f8b3660-e7de-420e-a8af-e0f0d73a6e33" />
+      <body>Step 3
+This is where things end</body>
+      <annotatedElements>
+        <classMoniker Id="7f872a70-d51c-41aa-94d3-88bc595ee08a" LastKnownName="ConversationEnded" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="38eb7ecf-81c2-45e3-9db5-98823e616ea3" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="de3ad04a-caa8-4e2a-a025-353e55479b1b" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e45bc970-175d-4b08-ac96-83cb8fff1ba2">
+          <propertyInstance Id="5b899cd8-58fe-4a5c-a311-5a9e70a2f31e" name="BaseName">
+            <elementDefinition Id="f9921c8b-8891-49f8-aaa7-95d2cdb77ca4" />
+          </propertyInstance>
+          <elementDefinition Id="4f21114a-5a4d-44c3-92be-bd812e6579fc" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c9029409-876c-4fb4-a6a4-8001823ec43b">
+          <propertyInstance Id="0889dd89-ee62-4f05-bf89-54d3cf81d431" name="ClrAttributes">
+            <elementDefinition Id="cbfcbb9f-e4d2-4242-a06f-cbec8ef06a53" />
+          </propertyInstance>
+          <elementDefinition Id="19e00d7a-ce6d-4b34-b5a9-4c92d6afaf09" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f39da7b7-a25d-4b71-b8f3-4623b7cf7a40">
+          <propertyInstance Id="243b97d3-d994-4c7b-b062-dc078e10df2f" name="Usings">
+            <elementDefinition Id="0404f39a-f2cd-4f14-984f-50ef43f45966" />
+          </propertyInstance>
+          <elementDefinition Id="b86b94f3-dd61-4674-958e-8b134c6e3592" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="a45bac18-a7ea-4137-add2-3e73d1a8236f" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="f32d283f-caeb-43db-8d56-877e996c7f27" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7a61e798-cb29-4982-a13d-64f4c6589bd6">
+          <propertyInstance Id="97d1ea8d-ab42-472d-ad41-eddf8a1e1041" name="Alias" value="EnumTemplate|HostTemplate|AggregateHostTemplate|ServiceHostTemplate|ServiceHostNinjectApplicationConfigurationTemplate|ServiceHostNinjectServiceHostingEnvironmentApplicationConfigurationTemplate|ServiceHostNinjectServiceApplicationConfigurationTemplate|AggregateServiceHostFactoryTemplate|ServiceHostFactoryTemplate|AggregateServiceChannelFactoryTemplate|ServiceChannelFactoryTemplate|DomainDataStoreFactoryInterfaceTemplate|MongoDomainDataStoreFactoryTemplate|AzureDocumentDbDomainDataStoreFactoryTemplate|SimplifiedSqlDomainDataStoreFactoryTemplate|SqlDomainDataStoreFactoryTemplate|InProcessDomainDataStoreFactoryTemplate|DomainNinjectModuleTemplate|AggregateTemplate|AggregateServiceInterfaceTemplate|AggregateServiceContractResolversTemplate|AggregateServiceContractResolversPartialTemplate|AggregateServiceTemplate|CommandTemplate|CreateCommandTemplate|UpdateCommandTemplate|DeleteCommandTemplate|CommandHandlerTemplate|CommandHandlerPartialTemplate|CreateCommandHandlerTemplate|UpdateCommandHandlerTemplate|DeleteCommandHandlerTemplate|EventTemplate|CreatedEventTemplate|UpdatedEventTemplate|DeletedEventTemplate|EventHandlerTemplate|EventHandlerPartialTemplate|EventAutoHandlerTemplate|EventAutoHandlerPartialTemplate|CreatedEventHandlerTemplate|CreatedEventHandlerPartialTemplate|UpdatedEventHandlerTemplate|UpdatedEventHandlerPartialTemplate|DeletedEventHandlerTemplate|DeletedEventHandlerPartialTemplate|EntityTemplate|EntityInterfaceTemplate|ServiceInterfaceTemplate|ServiceContractResolversTemplate|ServiceContractResolversPartialTemplate|ServiceTemplate|ServicePartialTemplate|AggregateRepositoryInterfaceTemplate|AggregateRepositoryTemplate|EntityRepositoryInterfaceTemplate|EntityRepositoryTemplate|QueryStrategyInterfaceTemplate|QueryStrategyTemplate|QueryBuilderInterfaceTemplate|QueryBuilderTemplate|QueryBuilderPartialTemplate|StructTemplate|AggregateUmlClassDiagramTemplate">
+            <elementDefinition Id="72ba63bb-7bd9-4fc8-9047-f6a3dba657f9" />
+          </propertyInstance>
+          <elementDefinition Id="00efd253-829c-438d-9fc9-e158d8733105" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="ded3c713-333d-45e4-9827-8b998c83fc94">
+          <propertyInstance Id="ca4e8be9-7e3c-4828-bf69-b8ec24d12867" name="TemplateFilePath" value="EnumTemplate=..\ModelingTemplates\Basic\EnumTemplate.t4|HostTemplate=..\ModelingTemplates\HostTemplate.t4|AggregateHostTemplate=..\ModelingTemplates\AggregateHostTemplate.t4|ServiceHostTemplate=..\ModelingTemplates\ServiceHostTemplate.t4|ServiceHostNinjectApplicationConfigurationTemplate=..\ModelingTemplates\ServiceHostNinjectApplicationConfigurationTemplate.t4|ServiceHostNinjectServiceHostingEnvironmentApplicationConfigurationTemplate=..\ModelingTemplates\ServiceHostNinjectServiceHostingEnvironmentApplicationConfigurationTemplate.t4|ServiceHostNinjectServiceApplicationConfigurationTemplate=..\ModelingTemplates\ServiceHostNinjectServiceApplicationConfigurationTemplate.t4|AggregateServiceHostFactoryTemplate=..\ModelingTemplates\AggregateServiceHostFactoryTemplate.t4|ServiceHostFactoryTemplate=..\ModelingTemplates\ServiceHostFactoryTemplate.t4|AggregateServiceChannelFactoryTemplate=..\ModelingTemplates\AggregateServiceChannelFactoryTemplate.t4|ServiceChannelFactoryTemplate=..\ModelingTemplates\ServiceChannelFactoryTemplate.t4|DomainDataStoreFactoryInterfaceTemplate=..\ModelingTemplates\DomainDataStoreFactoryInterfaceTemplate.t4|MongoDomainDataStoreFactoryTemplate=..\ModelingTemplates\MongoDomainDataStoreFactoryTemplate.t4|AzureDocumentDbDomainDataStoreFactoryTemplate=..\ModelingTemplates\AzureDocumentDbDomainDataStoreFactoryTemplate.t4|SimplifiedSqlDomainDataStoreFactoryTemplate=..\ModelingTemplates\SimplifiedSqlDomainDataStoreFactoryTemplate.t4|SqlDomainDataStoreFactoryTemplate=..\ModelingTemplates\SqlDomainDataStoreFactoryTemplate.t4|InProcessDomainDataStoreFactoryTemplate=..\ModelingTemplates\InProcessDomainDataStoreFactoryTemplate.t4|DomainNinjectModuleTemplate=..\ModelingTemplates\DomainNinjectModuleTemplate.t4|AggregateTemplate=..\ModelingTemplates\AggregateTemplate.t4|AggregateServiceInterfaceTemplate=..\ModelingTemplates\AggregateServiceInterfaceTemplate.t4|AggregateServiceContractResolversTemplate=..\ModelingTemplates\AggregateServiceContractResolversTemplate.t4|AggregateServiceContractResolversPartialTemplate=..\ModelingTemplates\AggregateServiceContractResolversPartialTemplate.t4|AggregateServiceTemplate=..\ModelingTemplates\AggregateServiceTemplate.t4|CommandTemplate=..\ModelingTemplates\CommandTemplate.t4|CreateCommandTemplate=..\ModelingTemplates\CreateCommandTemplate.t4|UpdateCommandTemplate=..\ModelingTemplates\UpdateCommandTemplate.t4|DeleteCommandTemplate=..\ModelingTemplates\DeleteCommandTemplate.t4|CommandHandlerTemplate=..\ModelingTemplates\CommandHandlerTemplate.t4|CommandHandlerPartialTemplate=..\ModelingTemplates\CommandHandlerPartialTemplate.t4|CreateCommandHandlerTemplate=..\ModelingTemplates\CreateCommandHandlerTemplate.t4|UpdateCommandHandlerTemplate=..\ModelingTemplates\UpdateCommandHandlerTemplate.t4|DeleteCommandHandlerTemplate=..\ModelingTemplates\DeleteCommandHandlerTemplate.t4|EventTemplate=..\ModelingTemplates\EventTemplate.t4|CreatedEventTemplate=..\ModelingTemplates\CreatedEventTemplate.t4|UpdatedEventTemplate=..\ModelingTemplates\UpdatedEventTemplate.t4|DeletedEventTemplate=..\ModelingTemplates\DeletedEventTemplate.t4|EventHandlerTemplate=..\ModelingTemplates\EventHandlerTemplate.t4|EventHandlerPartialTemplate=..\ModelingTemplates\EventHandlerPartialTemplate.t4|EventAutoHandlerTemplate=..\ModelingTemplates\EventAutoHandlerTemplate.t4|EventAutoHandlerPartialTemplate=..\ModelingTemplates\EventAutoHandlerPartialTemplate.t4|CreatedEventHandlerTemplate=..\ModelingTemplates\CreatedEventHandlerTemplate.t4|CreatedEventHandlerPartialTemplate=..\ModelingTemplates\CreatedEventHandlerPartialTemplate.t4|UpdatedEventHandlerTemplate=..\ModelingTemplates\UpdatedEventHandlerTemplate.t4|UpdatedEventHandlerPartialTemplate=..\ModelingTemplates\UpdatedEventHandlerPartialTemplate.t4|DeletedEventHandlerTemplate=..\ModelingTemplates\DeletedEventHandlerTemplate.t4|DeletedEventHandlerPartialTemplate=..\ModelingTemplates\DeletedEventHandlerPartialTemplate.t4|EntityTemplate=..\ModelingTemplates\EntityTemplate.t4|EntityInterfaceTemplate=..\ModelingTemplates\EntityInterfaceTemplate.t4|ServiceInterfaceTemplate=..\ModelingTemplates\ServiceInterfaceTemplate.t4|ServiceContractResolversTemplate=..\ModelingTemplates\ServiceContractResolversTemplate.t4|ServiceContractResolversPartialTemplate=..\ModelingTemplates\ServiceContractResolversPartialTemplate.t4|ServiceTemplate=..\ModelingTemplates\ServiceTemplate.t4|ServicePartialTemplate=..\ModelingTemplates\ServicePartialTemplate.t4|AggregateRepositoryInterfaceTemplate=..\ModelingTemplates\AggregateRepositoryInterfaceTemplate.t4|AggregateRepositoryTemplate=..\ModelingTemplates\AggregateRepositoryTemplate.t4|EntityRepositoryInterfaceTemplate=..\ModelingTemplates\EntityRepositoryInterfaceTemplate.t4|EntityRepositoryTemplate=..\ModelingTemplates\EntityRepositoryTemplate.t4|QueryStrategyInterfaceTemplate=..\ModelingTemplates\QueryStrategyInterfaceTemplate.t4|QueryStrategyTemplate=..\ModelingTemplates\QueryStrategyTemplate.t4|QueryBuilderInterfaceTemplate=..\ModelingTemplates\QueryBuilderInterfaceTemplate.t4|QueryBuilderTemplate=..\ModelingTemplates\QueryBuilderTemplate.t4|QueryBuilderPartialTemplate=..\ModelingTemplates\QueryBuilderPartialTemplate.t4|StructTemplate=..\ModelingTemplates\Basic\StructTemplate.t4|AggregateUmlClassDiagramTemplate=..\ModelingTemplates\AggregateUmlClassDiagramTemplate.t4">
+            <elementDefinition Id="b7576b77-3eb6-4185-857a-cd99e0cc3914" />
+          </propertyInstance>
+          <elementDefinition Id="cee6ba0f-cb03-441c-b1ad-6cfea42fbdb4" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="40a8e4cd-6513-48a3-b336-fddb91fef0a2">
+          <propertyInstance Id="a5ce44ed-646e-4cdb-b197-e4d0ae4e1bf4" name="ProjectPath" value="EnumTemplate=..\HelloWorld\HelloWorld.csproj|HostTemplate=..\HelloWorld.Domain.Host\HelloWorld.Domain.Host.csproj|AggregateHostTemplate=..\HelloWorld.Domain.Host\HelloWorld.Domain.Host.csproj|ServiceHostTemplate=..\HelloWorld.Domain.Host\HelloWorld.Domain.Host.csproj|ServiceHostNinjectApplicationConfigurationTemplate=..\HelloWorld.ServiceHost.Ninject\HelloWorld.ServiceHost.Ninject.csproj|ServiceHostNinjectServiceHostingEnvironmentApplicationConfigurationTemplate=..\HelloWorld.ServiceHost.Ninject\HelloWorld.ServiceHost.Ninject.csproj|ServiceHostNinjectServiceApplicationConfigurationTemplate=..\HelloWorld.ServiceHost.Ninject\HelloWorld.ServiceHost.Ninject.csproj|AggregateServiceHostFactoryTemplate=..\HelloWorld.ServiceHost.Ninject\HelloWorld.ServiceHost.Ninject.csproj|ServiceHostFactoryTemplate=..\HelloWorld.ServiceHost.Ninject\HelloWorld.ServiceHost.Ninject.csproj|AggregateServiceChannelFactoryTemplate=..\HelloWorld.ServiceHost.Ninject\HelloWorld.ServiceHost.Ninject.csproj|ServiceChannelFactoryTemplate=..\HelloWorld.ServiceHost.Ninject\HelloWorld.ServiceHost.Ninject.csproj|DomainDataStoreFactoryInterfaceTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|MongoDomainDataStoreFactoryTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|AzureDocumentDbDomainDataStoreFactoryTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|SimplifiedSqlDomainDataStoreFactoryTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|SqlDomainDataStoreFactoryTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|InProcessDomainDataStoreFactoryTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|DomainNinjectModuleTemplate=..\HelloWorld.Domain.Ninject\HelloWorld.Domain.Ninject.csproj|AggregateTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|AggregateServiceInterfaceTemplate=..\HelloWorld\HelloWorld.csproj|AggregateServiceContractResolversTemplate=..\HelloWorld\HelloWorld.csproj|AggregateServiceContractResolversPartialTemplate=..\HelloWorld\HelloWorld.csproj|AggregateServiceTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|CommandTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|CreateCommandTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|UpdateCommandTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|DeleteCommandTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|CommandHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|CommandHandlerPartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|CreateCommandHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|UpdateCommandHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|DeleteCommandHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|EventTemplate=..\HelloWorld\HelloWorld.csproj|CreatedEventTemplate=..\HelloWorld\HelloWorld.csproj|UpdatedEventTemplate=..\HelloWorld\HelloWorld.csproj|DeletedEventTemplate=..\HelloWorld\HelloWorld.csproj|EventHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|EventHandlerPartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|EventAutoHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|EventAutoHandlerPartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|CreatedEventHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|CreatedEventHandlerPartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|UpdatedEventHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|UpdatedEventHandlerPartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|DeletedEventHandlerTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|DeletedEventHandlerPartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|EntityTemplate=..\HelloWorld\HelloWorld.csproj|EntityInterfaceTemplate=..\HelloWorld\HelloWorld.csproj|ServiceInterfaceTemplate=..\HelloWorld\HelloWorld.csproj|ServiceContractResolversTemplate=..\HelloWorld\HelloWorld.csproj|ServiceContractResolversPartialTemplate=..\HelloWorld\HelloWorld.csproj|ServiceTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|ServicePartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|AggregateRepositoryInterfaceTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|AggregateRepositoryTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|EntityRepositoryInterfaceTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|EntityRepositoryTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|QueryStrategyInterfaceTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|QueryStrategyTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|QueryBuilderInterfaceTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|QueryBuilderTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|QueryBuilderPartialTemplate=..\HelloWorld.Domain\HelloWorld.Domain.csproj|StructTemplate=..\HelloWorld\HelloWorld.csproj|AggregateUmlClassDiagramTemplate=..\HelloWorld.Models\HelloWorld.Models.modelproj">
+            <elementDefinition Id="1a9ce854-9295-4835-80c0-5253279d5c16" />
+          </propertyInstance>
+          <elementDefinition Id="5f2c6786-82e0-435f-b43f-a0557a4e735a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="da7cba95-c85c-456c-b771-2d1193d57a43">
+          <propertyInstance Id="b0c2967f-9239-47d5-a2a7-fd7bd6804815" name="TargetDirectory" value="EnumTemplate={PackageStructure}|HostTemplate={PackageStructure}|AggregateHostTemplate={PackageStructure}\Services\Host\|ServiceHostTemplate={PackageStructure}\Host\|ServiceHostNinjectApplicationConfigurationTemplate=|ServiceHostNinjectServiceHostingEnvironmentApplicationConfigurationTemplate=|ServiceHostNinjectServiceApplicationConfigurationTemplate=|AggregateServiceHostFactoryTemplate={PackageStructure}\Services\ServiceHost\Ninject\ServiceHostFactories|ServiceHostFactoryTemplate={PackageStructure}\ServiceHost\Ninject\ServiceHostFactories|AggregateServiceChannelFactoryTemplate={PackageStructure}\Services\ServiceHost\Ninject\ServiceChannelFactories|ServiceChannelFactoryTemplate={PackageStructure}\ServiceHost\Ninject\ServiceChannelFactories|DomainDataStoreFactoryInterfaceTemplate={PackageStructure}\Factories|MongoDomainDataStoreFactoryTemplate={PackageStructure}\Factories|AzureDocumentDbDomainDataStoreFactoryTemplate={PackageStructure}\Factories|SimplifiedSqlDomainDataStoreFactoryTemplate={PackageStructure}\Factories|SqlDomainDataStoreFactoryTemplate={PackageStructure}\Factories|InProcessDomainDataStoreFactoryTemplate={PackageStructure}\Factories|DomainNinjectModuleTemplate={PackageStructure}\Configuration|AggregateTemplate={PackageStructure}|AggregateServiceInterfaceTemplate={PackageStructure}\Services|AggregateServiceContractResolversTemplate={PackageStructure}\Services|AggregateServiceContractResolversPartialTemplate={PackageStructure}\Services|AggregateServiceTemplate={PackageStructure}\Services|CommandTemplate={PackageStructure}|CreateCommandTemplate={PackageStructure}\Commands|UpdateCommandTemplate={PackageStructure}\Commands|DeleteCommandTemplate={PackageStructure}\Commands|CommandHandlerTemplate={PackageStructure}\Handlers|CommandHandlerPartialTemplate={PackageStructure}\Handlers|CreateCommandHandlerTemplate={PackageStructure}\Commands\Handlers|UpdateCommandHandlerTemplate={PackageStructure}\Commands\Handlers|DeleteCommandHandlerTemplate={PackageStructure}\Commands\Handlers|EventTemplate={PackageStructure}|CreatedEventTemplate={PackageStructure}\Events|UpdatedEventTemplate={PackageStructure}\Events|DeletedEventTemplate={PackageStructure}\Events|EventHandlerTemplate={PackageStructure}\Handlers|EventHandlerPartialTemplate={PackageStructure}\Handlers|EventAutoHandlerTemplate={PackageStructure}\Handlers|EventAutoHandlerPartialTemplate={PackageStructure}\Handlers|CreatedEventHandlerTemplate={PackageStructure}\Events\Handlers|CreatedEventHandlerPartialTemplate={PackageStructure}\Events\Handlers|UpdatedEventHandlerTemplate={PackageStructure}\Events\Handlers|UpdatedEventHandlerPartialTemplate={PackageStructure}\Events\Handlers|DeletedEventHandlerTemplate={PackageStructure}\Events\Handlers|DeletedEventHandlerPartialTemplate={PackageStructure}\Events\Handlers|EntityTemplate={PackageStructure}\Entities|EntityInterfaceTemplate={PackageStructure}\Entities|ServiceInterfaceTemplate={PackageStructure}|ServiceContractResolversTemplate={PackageStructure}|ServiceContractResolversPartialTemplate={PackageStructure}|ServiceTemplate={PackageStructure}|ServicePartialTemplate={PackageStructure}|AggregateRepositoryInterfaceTemplate={PackageStructure}\Repositories|AggregateRepositoryTemplate={PackageStructure}\Repositories|EntityRepositoryInterfaceTemplate={PackageStructure}\Repositories|EntityRepositoryTemplate={PackageStructure}\Repositories|QueryStrategyInterfaceTemplate={PackageStructure}|QueryStrategyTemplate={PackageStructure}|QueryBuilderInterfaceTemplate={PackageStructure}|QueryBuilderTemplate={PackageStructure}|QueryBuilderPartialTemplate={PackageStructure}|StructTemplate={PackageStructure}|AggregateUmlClassDiagramTemplate={PackageStructure}">
+            <elementDefinition Id="2714c08c-ca76-4b27-ba7f-978ee66a9842" />
+          </propertyInstance>
+          <elementDefinition Id="a194126c-90aa-43c2-893f-63a3fe17c178" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="999983a8-e5da-4039-af27-610ecca75d13">
+          <propertyInstance Id="f960e0c0-107f-4dda-8e2e-d3bedd21c8e2" name="TargetName" value="EnumTemplate={Name}.generated|HostTemplate={Name}Host.generated|AggregateHostTemplate={Name}AggregateServiceHost.generated|ServiceHostTemplate={Name}Host.generated|ServiceHostNinjectApplicationConfigurationTemplate=app|ServiceHostNinjectServiceHostingEnvironmentApplicationConfigurationTemplate=system.serviceModel.serviceHostingEnvironment|ServiceHostNinjectServiceApplicationConfigurationTemplate=system.serviceModel.services|AggregateServiceHostFactoryTemplate={Name}AggregateServiceHostFactory.generated|ServiceHostFactoryTemplate={Name}HostFactory.generated|AggregateServiceChannelFactoryTemplate=Http{Name}AggregateServiceChannelFactory.generated|ServiceChannelFactoryTemplate=Http{Name}ServiceChannelFactory.generated|DomainDataStoreFactoryInterfaceTemplate=I{Name}DataStoreFactory.generated|MongoDomainDataStoreFactoryTemplate={Name}MongoDataStoreFactory.generated|AzureDocumentDbDomainDataStoreFactoryTemplate={Name}AzureDocumentDbDataStoreFactory.generated|SimplifiedSqlDomainDataStoreFactoryTemplate={Name}SimplifiedSqlDataStoreFactory.generated|SqlDomainDataStoreFactoryTemplate={Name}SqlDataStoreFactory.generated|InProcessDomainDataStoreFactoryTemplate={Name}InProcessDataStoreFactory.generated|DomainNinjectModuleTemplate=DomainNinjectModule.generated|AggregateTemplate={Name}.generated|AggregateServiceInterfaceTemplate=I{Name}AggregateService.generated|AggregateServiceContractResolversTemplate={Name}AggregateServiceResolvers.generated|AggregateServiceContractResolversPartialTemplate={Name}AggregateServiceResolvers|AggregateServiceTemplate={Name}AggregateService.generated|CommandTemplate={Name}.generated|CreateCommandTemplate=Create{Name}Command.generated|UpdateCommandTemplate=Update{Name}Command.generated|DeleteCommandTemplate=Delete{Name}Command.generated|CommandHandlerTemplate={Name}CommandHandler.generated|CommandHandlerPartialTemplate={Name}CommandHandler|CreateCommandHandlerTemplate=Create{Name}CommandHandler.generated|UpdateCommandHandlerTemplate=Update{Name}CommandHandler.generated|DeleteCommandHandlerTemplate=Delete{Name}CommandHandler.generated|EventTemplate={Name}.generated|CreatedEventTemplate={Name}Created.generated|UpdatedEventTemplate={Name}Updated.generated|DeletedEventTemplate={Name}Deleted.generated|EventHandlerTemplate={Name}EventHandler.generated|EventHandlerPartialTemplate={Name}EventHandler|EventAutoHandlerTemplate={Name}EventHandler.generated|EventAutoHandlerPartialTemplate={Name}EventHandler|CreatedEventHandlerTemplate={Name}CreatedEventHandler.generated|CreatedEventHandlerPartialTemplate={Name}CreatedEventHandler|UpdatedEventHandlerTemplate={Name}UpdatedEventHandler.generated|UpdatedEventHandlerPartialTemplate={Name}UpdatedEventHandler|DeletedEventHandlerTemplate={Name}DeletedEventHandler.generated|DeletedEventHandlerPartialTemplate={Name}DeletedEventHandler|EntityTemplate={Name}Entity.generated|EntityInterfaceTemplate=I{Name}Entity.generated|ServiceInterfaceTemplate=I{Name}.generated|ServiceContractResolversTemplate={Name}Resolvers.generated|ServiceContractResolversPartialTemplate={Name}Resolvers|ServiceTemplate={Name}.generated|ServicePartialTemplate={Name}|AggregateRepositoryInterfaceTemplate=I{Name}Repository.generated|AggregateRepositoryTemplate={Name}Repository.generated|EntityRepositoryInterfaceTemplate=I{Name}Repository.generated|EntityRepositoryTemplate={Name}Repository.generated|QueryStrategyInterfaceTemplate=I{Name}.generated|QueryStrategyTemplate={Name}.generated|QueryBuilderInterfaceTemplate=I{Name}Builder.generated|QueryBuilderTemplate={Name}Builder.generated|QueryBuilderPartialTemplate={Name}Builder|StructTemplate={Name}.generated|AggregateUmlClassDiagramTemplate={Name}UmlClassDiagram.generated">
+            <elementDefinition Id="5d31af41-370d-4022-a63f-d73d38dbe313" />
+          </propertyInstance>
+          <elementDefinition Id="a26d7128-f5de-4bfb-b3c8-c2c434aa0166" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="acb861f5-bf9d-42f1-aad8-d98f088a2261">
+          <propertyInstance Id="3853cc3c-b288-48cb-b6b4-e34d19402728" name="Overwrite" value="EnumTemplate=True|HostTemplate=True|AggregateHostTemplate=True|ServiceHostTemplate=True|ServiceHostNinjectApplicationConfigurationTemplate=True|ServiceHostNinjectServiceHostingEnvironmentApplicationConfigurationTemplate=True|ServiceHostNinjectServiceApplicationConfigurationTemplate=True|AggregateServiceHostFactoryTemplate=True|ServiceHostFactoryTemplate=True|AggregateServiceChannelFactoryTemplate=True|ServiceChannelFactoryTemplate=True|DomainDataStoreFactoryInterfaceTemplate=True|MongoDomainDataStoreFactoryTemplate=True|AzureDocumentDbDomainDataStoreFactoryTemplate=True|SimplifiedSqlDomainDataStoreFactoryTemplate=True|SqlDomainDataStoreFactoryTemplate=True|InProcessDomainDataStoreFactoryTemplate=True|DomainNinjectModuleTemplate=True|AggregateTemplate=True|AggregateServiceInterfaceTemplate=True|AggregateServiceContractResolversTemplate=True|AggregateServiceContractResolversPartialTemplate=False|AggregateServiceTemplate=True|CommandTemplate=True|CreateCommandTemplate=True|UpdateCommandTemplate=True|DeleteCommandTemplate=True|CommandHandlerTemplate=True|CommandHandlerPartialTemplate=False|CreateCommandHandlerTemplate=True|UpdateCommandHandlerTemplate=True|DeleteCommandHandlerTemplate=True|EventTemplate=True|CreatedEventTemplate=True|UpdatedEventTemplate=True|DeletedEventTemplate=True|EventHandlerTemplate=True|EventHandlerPartialTemplate=False|EventAutoHandlerTemplate=True|EventAutoHandlerPartialTemplate=False|CreatedEventHandlerTemplate=True|CreatedEventHandlerPartialTemplate=False|UpdatedEventHandlerTemplate=True|UpdatedEventHandlerPartialTemplate=False|DeletedEventHandlerTemplate=True|DeletedEventHandlerPartialTemplate=False|EntityTemplate=True|EntityInterfaceTemplate=True|ServiceInterfaceTemplate=True|ServiceContractResolversTemplate=True|ServiceContractResolversPartialTemplate=False|ServiceTemplate=True|ServicePartialTemplate=False|AggregateRepositoryInterfaceTemplate=True|AggregateRepositoryTemplate=True|EntityRepositoryInterfaceTemplate=True|EntityRepositoryTemplate=True|QueryStrategyInterfaceTemplate=True|QueryStrategyTemplate=True|QueryBuilderInterfaceTemplate=True|QueryBuilderTemplate=True|QueryBuilderPartialTemplate=False|StructTemplate=True|AggregateUmlClassDiagramTemplate=True">
+            <elementDefinition Id="8a042f42-1da5-4bb0-aa5a-7568f2e4018b" />
+          </propertyInstance>
+          <elementDefinition Id="6b91e432-b596-46f8-b92f-2fb132bb1eaf" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b5ac4858-7896-4e17-a21e-10ad2bb2e226">
+          <propertyInstance Id="83893cf5-0484-4801-8b38-1c4fb4aa7cdc" name="Parameters">
+            <elementDefinition Id="2ebddedc-e533-497a-a632-4c9be7d07a35" />
+          </propertyInstance>
+          <elementDefinition Id="23da2da3-09e4-40b9-9ab4-e2bbe17b0e78" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="006699ff-2c48-4a8a-924a-2a65f59ddce5" name="SayHelloWorld" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2e9eb5dc-7235-4175-8871-c33ec0b7f031" name="Command" profile="CqrsProfile">
+            <elementDefinition Id="306bbeb3-80df-4937-b2d6-fc14951bdefe" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e3f38964-32d8-4e6f-8467-7828ec0414d9">
+                <propertyInstance Id="c124d13e-9e23-4934-81aa-e63440c7367f" name="CommandType" value="Simple">
+                  <elementDefinition Id="1cebab4b-98a6-47b3-8a25-90c512d80d77" />
+                </propertyInstance>
+                <elementDefinition Id="f1e8193a-e7f9-465b-9f34-5b402a89c8ae" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ca0c9ad4-f39f-443a-89e2-63458605e4bd">
+                <propertyInstance Id="aab9cf62-a63d-4814-b949-0917ac070695" name="AggregateRoot">
+                  <elementDefinition Id="c21ec419-1755-476f-9ee8-dea0bb93f379" />
+                </propertyInstance>
+                <elementDefinition Id="6f506f88-643a-44e5-8766-c6e61f8e3330" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="53605c43-e6ec-468e-92aa-478b24b1a246">
+                <propertyInstance Id="cafbf9ed-a7d6-4a3a-a33c-0462941b320f" name="CreatesNewInstance" value="false">
+                  <elementDefinition Id="0399ae1d-14e8-4ffc-8ba1-1f1ae06cf1a2" />
+                </propertyInstance>
+                <elementDefinition Id="36eda1fb-6e18-4a24-8193-87aef3017e26" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3c2d846b-9d53-4220-a9ea-405fc98275fd">
+                <propertyInstance Id="ebdcd874-776b-4031-b70c-c0b80a4e6507" name="AutoGenerateWebApiMethod" value="true">
+                  <elementDefinition Id="2ab96ff5-a9c1-4fe6-9a94-22efac8b5f1f" />
+                </propertyInstance>
+                <elementDefinition Id="77f5b94c-483b-4d98-b49e-e2562b7001c9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="60e7b1d9-9119-40eb-88cf-b6dea844adea">
+                <propertyInstance Id="582b05ed-fb44-499c-939c-4c6f15271c8e" name="WebApiVerb" value="HttpPost">
+                  <elementDefinition Id="f960e22c-ab54-4673-87c3-b08d8c56386f" />
+                </propertyInstance>
+                <elementDefinition Id="5a45c9d3-4e3d-4c1e-b58b-9f434bc392aa" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="eb8db928-70f4-4e10-b9bb-1740d2afb1ae">
+                <propertyInstance Id="455c5408-cd66-40d0-83f5-ed5cf82755cb" name="IsWebApiUrlRsned" value="false">
+                  <elementDefinition Id="945ec4b1-f264-4b8d-9a6f-dae2ff03c7a4" />
+                </propertyInstance>
+                <elementDefinition Id="a1106ac8-deb8-42f4-b783-18fa60b6a28b" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="7667a4d6-ef9f-4be2-b208-b6107981575b" />
+        <targetEnds>
+          <association Id="d87afe54-a55d-40a8-8ac7-428ad5a5cf34" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SaeHelloWorld" isAbstract="false">
+            <classMoniker Id="24a3e792-3633-4468-83b0-d91e98234c7e" LastKnownName="HelloWorld" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be30916e-1baa-4e2c-89e3-0e76ae42c054" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7b6a665c-5e38-420b-97e2-59b42abba484" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bcc0c91b-6899-45c8-b126-b974a2334e80" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dc13ab08-1308-4682-a5e2-eb317dd36e7a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="71e3bb12-ffed-4adc-a3f4-0de149368061" name="CommandHandler" profile="CqrsProfile">
+                <elementDefinition Id="d5d7a731-35dd-4b35-b3af-65217c1a8140" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6c2460fd-8d02-4cda-98c3-fc3bac7b532a">
+                    <propertyInstance Id="6f1bd175-34e9-404e-96b0-3ebd82197ad5" name="AggregateRootMethod">
+                      <elementDefinition Id="bafea9d3-e352-43f2-baca-b6db794af6c2" />
+                    </propertyInstance>
+                    <elementDefinition Id="6e925f89-5d1f-4641-a84a-d8fa503c4ca3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b44a19e2-9975-46e6-8f01-c944d6c68d63" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="6e4aebc1-4e8f-46a7-8bfe-b9a16f78f9e9" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f5a12c2-a5c6-47d9-b2d3-6252ae79aad1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c14f5b0c-42f1-4573-8e70-2ce062eda266" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="24a3e792-3633-4468-83b0-d91e98234c7e" name="HelloWorld" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="0d0023c7-4d09-4fb4-be64-a29be1dcd2f3" name="AggregateRoot" profile="CqrsProfile">
+            <elementDefinition Id="5d72cb71-e641-4f43-bc60-2682d6c0c613" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9d1f6ac8-f1a7-41a9-8a8b-a6fb1af5cad8">
+                <propertyInstance Id="77372bdc-fe46-460b-ab00-6a0d909a8a26" name="BuildCreateCommand" value="false">
+                  <elementDefinition Id="70635dc9-3a02-4b63-a744-c664192ed41e" />
+                </propertyInstance>
+                <elementDefinition Id="cfb6a0b9-f040-475e-9c41-056b84e33477" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="513165c8-e099-4793-9b86-9de4d02cad6b">
+                <propertyInstance Id="538cc961-3539-417e-9c04-352e4f6d290e" name="BuildUpdateCommand" value="false">
+                  <elementDefinition Id="d0278f0d-eaca-4cd1-a2be-45509bf4b1b1" />
+                </propertyInstance>
+                <elementDefinition Id="4b644408-8bbd-4d08-95c4-1c3472df21c3" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="cb7b3a86-5f63-45a5-baa5-adcbc8b4c981">
+                <propertyInstance Id="7eb1c912-d8fc-48b2-9022-253aa2bc0330" name="BuildDeleteCommand" value="false">
+                  <elementDefinition Id="9e2583a2-aab0-4212-9ab2-f75c78b2b2fd" />
+                </propertyInstance>
+                <elementDefinition Id="cb50395d-37f4-4c9d-8943-aa99b32d17e9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7d6e2c3c-7427-4ef4-a834-34095a1003ea">
+                <propertyInstance Id="a2c2c30c-a344-4713-be74-1c52f8b7f63f" name="BuildCreateServiceMethod" value="false">
+                  <elementDefinition Id="2cc88f5d-f4ab-4876-9983-777c8b9bc401" />
+                </propertyInstance>
+                <elementDefinition Id="67f14413-380e-4b03-995d-c5079361c38b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6cc17c65-1f22-471c-845d-01eef22fe499">
+                <propertyInstance Id="4a70e094-7839-4ace-b620-21c4d09dceee" name="BuildUpdateServiceMethod" value="false">
+                  <elementDefinition Id="d3794a11-43e2-4129-a7e8-ba2bce07774d" />
+                </propertyInstance>
+                <elementDefinition Id="5e16e8d4-105e-4bda-b73a-de19de670025" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9a2a3d28-dd5b-4525-86c3-1dde5a26d8bf">
+                <propertyInstance Id="4f9768aa-752a-4bff-9b06-31ab2d894b17" name="BuildDeleteServiceMethod" value="false">
+                  <elementDefinition Id="5dd07c71-a526-4e13-9baf-13df80cd5021" />
+                </propertyInstance>
+                <elementDefinition Id="203dbdf5-84f6-480b-bc1f-669a5525f2b3" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="07e97d00-870b-4f0b-a756-798b7ad770b0">
+                <propertyInstance Id="e17c25a9-50af-42df-9c6f-b7bff28626bb" name="BuildCreateControllerMethod" value="false">
+                  <elementDefinition Id="cca2403f-7f8a-407f-b02f-87cb8ec109ef" />
+                </propertyInstance>
+                <elementDefinition Id="770de31c-a653-46df-820c-bb5b649a03db" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8713bd6b-2d30-44a2-b0de-dd0a0e78b534">
+                <propertyInstance Id="b2179a44-a9f4-4c2a-82ba-a963fe06652b" name="BuildUpdateControllerMethod" value="false">
+                  <elementDefinition Id="c01aab91-7f3d-4ac5-820e-60911cf87521" />
+                </propertyInstance>
+                <elementDefinition Id="cdf94758-a73b-4b7c-aab7-39bf3d7504b1" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="179950f9-5c60-47c5-af40-c60a65d03393">
+                <propertyInstance Id="956effb5-5a04-42f3-8338-2d37276cced4" name="BuildDeleteControllerMethod" value="false">
+                  <elementDefinition Id="36d2d487-96e3-4e95-aaf5-5d16042adbce" />
+                </propertyInstance>
+                <elementDefinition Id="f3c952ce-9b10-489c-b2c3-8e60618e645b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="57596617-f0f8-44ef-8709-94bfc4db8bf4">
+                <propertyInstance Id="02e0ce7c-0d9d-4cb8-949f-aa618f66574a" name="BuildRepository" value="true">
+                  <elementDefinition Id="af041cef-1e49-4c35-8fbb-fdb5f95704c1" />
+                </propertyInstance>
+                <elementDefinition Id="1e98a1d4-1965-47d7-bc80-70102e186d91" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ad5cc18d-1a57-430d-8c25-69669ff90135">
+                <propertyInstance Id="1f58ae6a-b8ca-4eea-bb2a-8803f3db82c5" name="BuildService" value="true">
+                  <elementDefinition Id="8b8b0e80-ef94-41c2-9ca1-81246cdeae6f" />
+                </propertyInstance>
+                <elementDefinition Id="c75ab04c-fc8a-4912-89aa-5058a373e18d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ad759261-8197-403f-8acf-1bbb72b3ea32">
+                <propertyInstance Id="4a8ee659-d644-4fcf-8850-bb5b3c08ecbf" name="BuildDataStore" value="true">
+                  <elementDefinition Id="54b7bc55-5319-44b4-92e2-47473543c14d" />
+                </propertyInstance>
+                <elementDefinition Id="d6d487d9-fff5-435b-9f57-e068d2ea7975" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d3b25d61-a126-476d-b01f-c943d0d8840e">
+                <propertyInstance Id="5ae39916-2226-4b4e-a310-f86fd0c6e043" name="IsSnapshotable" value="false">
+                  <elementDefinition Id="ff37221a-8391-4ca2-a5a8-22405d498837" />
+                </propertyInstance>
+                <elementDefinition Id="47b2b83a-2fcc-41d6-8dc8-4f207c6afcff" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9fae1a32-dc37-49a2-a56b-3ae5b2efa9b2">
+                <propertyInstance Id="6f6ad949-6c8b-45af-87c8-dad4578748b4" name="AutoGenerateAllProperties" value="true">
+                  <elementDefinition Id="fa2715c3-76b6-4633-bfa3-a40d184a450f" />
+                </propertyInstance>
+                <elementDefinition Id="59974367-a8eb-4925-89f6-17695dac3ec6" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ce3bc9af-5946-450f-9b44-ed7ff6f4f425">
+                <propertyInstance Id="b88a0d6f-7eed-47dc-bbc0-2c2d3e3b29c2" name="AggregateTechnology" value="Akka">
+                  <elementDefinition Id="2c712070-7892-4ce0-9e10-cba635163e7a" />
+                </propertyInstance>
+                <elementDefinition Id="dc605fae-ef89-4381-a9e7-23847a9cb467" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="b09b8e49-1f7f-466c-94a2-6ec7d8b3e936" />
+        <targetEnds>
+          <association Id="7c85989f-09fc-4951-901c-82f5b1d02e39" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SaeHelloWorld" isAbstract="false">
+            <classMoniker Id="726e74a5-0186-48fa-a06f-6923913ea8dc" LastKnownName="HelloWorldSaid" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd4e78e4-bfb5-4064-acf0-6b8300a23fbc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4d92b7f0-b3e6-411c-9120-cb03422ba032" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d53e9858-905c-450d-a766-ee4055f646bc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d74f872-8946-41e3-b09c-b80a7427837f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e6981432-2993-48e8-a78c-b90fe71767b6" />
+          </association>
+          <association Id="549bfce2-92c0-4cb8-b4f0-a5e6778a369b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="ReplyToHelloWorld" isAbstract="false">
+            <classMoniker Id="56d4b755-b016-4c35-a8a5-cce25ca51208" LastKnownName="HelloWorldRepliedTo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b1a0e403-7cef-4a25-a062-a406fc9ab741" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ca3b6753-cc39-4819-a746-1fe5719cfdcc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d8c51d9-f6fc-4043-bc30-6b3b200f40a2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="faa51310-ddf4-4e78-800b-e80298560800" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="62fd8327-93ce-498a-93f5-e0a9c12ce8c7" />
+          </association>
+          <association Id="1257d925-df1f-4aae-b64e-efc4bf79c01e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7f872a70-d51c-41aa-94d3-88bc595ee08a" LastKnownName="ConversationEnded" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfa179cf-3ef1-4dd4-b044-0d481d7843ff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7ac70c75-8dde-4b2e-860f-b61b62abdc0b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d63e42c-5b12-4087-a595-acffbae6e43d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7c22ec23-4d0b-4aad-a032-2aaa937b11c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bae4abee-ba55-4be1-969a-7ca5c1c2a2d2" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c14f5b0c-42f1-4573-8e70-2ce062eda266" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cacb5bc1-9a45-431e-bd17-3b8a844b238b" name="ReplyToHelloWorld" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a74d647d-9365-41b3-adc1-8053ec539d67" name="Command" profile="CqrsProfile">
+            <elementDefinition Id="398b9e44-cff2-4fab-8f7b-01c7ad331147" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="bd714f82-6614-4786-a8a8-1d6fe330533c">
+                <propertyInstance Id="891a4a25-f2b0-4610-9b49-0f4ff2412326" name="CommandType" value="Simple">
+                  <elementDefinition Id="ac07acfe-2f74-49e7-a9f0-93cec7b13684" />
+                </propertyInstance>
+                <elementDefinition Id="5efe7729-3140-4e23-a56c-731ea031c8cd" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1aa9d457-d086-41a1-a185-264aca460973">
+                <propertyInstance Id="f4669d30-b802-48db-9674-1e9f93eeb140" name="AggregateRoot">
+                  <elementDefinition Id="7fc36373-e494-442f-af39-2fe516aaa11e" />
+                </propertyInstance>
+                <elementDefinition Id="724beeb8-0709-43d6-b970-d116fa4b8e0b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8ee7427e-6d3f-4378-89a9-2d1bf9c9b552">
+                <propertyInstance Id="0d5ad7c2-4a37-46e5-abdd-307cb9b50b10" name="CreatesNewInstance" value="false">
+                  <elementDefinition Id="348fd4f4-812d-456d-805d-622334518dc4" />
+                </propertyInstance>
+                <elementDefinition Id="01c7e044-8d0d-4c0c-b1df-d9c160c6943f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a8333488-a2b6-4ed3-8e90-fac95086b795">
+                <propertyInstance Id="bd7e0a99-b298-46d3-b291-c7b68b0c6755" name="AutoGenerateWebApiMethod" value="true">
+                  <elementDefinition Id="718dd3b6-c4a5-4674-aeb6-785c5aa78c85" />
+                </propertyInstance>
+                <elementDefinition Id="3065772d-f648-4ec1-aa19-b1136acaba92" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="43b80a01-f606-4821-a91e-682777b6bd27">
+                <propertyInstance Id="8d437d81-9eb8-4f3a-8847-cfd7869391bd" name="WebApiVerb" value="HttpPost">
+                  <elementDefinition Id="c7a9187d-8b93-46ee-8bf3-899d6ef44ded" />
+                </propertyInstance>
+                <elementDefinition Id="446648dd-40c6-48e2-be98-4bea3b6ec0c5" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="5990dc36-b1ea-4959-99ed-f6246a1fcb68">
+                <propertyInstance Id="c3a6ddd8-cc85-4a12-9eef-319171530cc1" name="IsWebApiUrlRsned" value="false">
+                  <elementDefinition Id="1c9b0a34-fb67-487c-8b59-f90fd74fb445" />
+                </propertyInstance>
+                <elementDefinition Id="65fe5094-060d-4509-9074-b8c59c4c5fdb" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="ca2e1514-949f-4cba-b486-b10922b6b643" />
+        <targetEnds>
+          <association Id="722bfaaf-df08-442b-b969-2f5ad8c53607" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="ReplyToHelloWorld" isAbstract="false">
+            <classMoniker Id="24a3e792-3633-4468-83b0-d91e98234c7e" LastKnownName="HelloWorld" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="197cefce-a033-4514-bfec-fa74ecaf8fcc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0bea82b-fc92-4b4f-a212-83c20d63b6b3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52e28ebf-9886-427a-a839-cf124e0f0624" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc66a2cc-cc35-4003-a9b8-9643d0d045cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="eb96f057-250b-4853-afaa-4a2284f8e076" name="CommandHandler" profile="CqrsProfile">
+                <elementDefinition Id="2091c72a-12ce-429b-92ba-4c11d4874fe1" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bc2c2b92-09fc-49f5-8ae6-0c5c1eb8f9e7">
+                    <propertyInstance Id="86fb88d3-17c2-4ed4-a75a-e2d52f40fb41" name="AggregateRootMethod">
+                      <elementDefinition Id="08cf792e-458f-41f9-bba9-8d856cec3e2d" />
+                    </propertyInstance>
+                    <elementDefinition Id="999716f3-ac12-4de9-af08-0941ef766a04" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="092ae707-fd36-4228-bae1-5620c4fd3384" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b4958014-b810-43fe-9a87-86a7843be9ef" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6d222e01-aa73-4d4d-a780-a32df221900d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b6d87171-33be-45dd-8db6-e0fdcca2e077" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b6d87171-33be-45dd-8db6-e0fdcca2e077" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="726e74a5-0186-48fa-a06f-6923913ea8dc" name="HelloWorldSaid" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d6644161-51c4-4c8d-bb62-e023ec626d57" name="Event" profile="CqrsProfile">
+            <elementDefinition Id="fd3124a2-0957-4541-bad2-47704fa54bdc" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1b13d66e-28c3-45a5-8437-a2b713d348e6">
+                <propertyInstance Id="1299981b-15b4-4ad8-b67d-133bf6438198" name="BuildAutoHandler" value="true">
+                  <elementDefinition Id="7141127d-c8c2-45be-be1c-4749705420bb" />
+                </propertyInstance>
+                <elementDefinition Id="5bdef509-0690-4d77-a3a3-4731af22e6f9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b927c155-4627-4644-a79a-6091b641cdff">
+                <propertyInstance Id="63b2768f-aac8-4c7e-b75c-d6713f59f70f" name="EventVisibility" value="Public">
+                  <elementDefinition Id="e0396ab9-615f-4d63-87df-f52bac7b29ac" />
+                </propertyInstance>
+                <elementDefinition Id="30cf430a-e48c-409c-b64d-c7c2077b3009" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="38e37e9a-07cb-45ea-8a1a-dfbf0cc51506">
+                <propertyInstance Id="1969da18-0363-49fd-bd2f-10f51488478e" name="EventNotification" value="Caller">
+                  <elementDefinition Id="4302b3aa-37dc-4d1e-9d4e-04b1fc73f4ba" />
+                </propertyInstance>
+                <elementDefinition Id="38caa9f7-60cb-4512-a5ab-b5985bcbc4e4" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="53205f90-e24a-4541-848b-bca5c269f33f" />
+        <targetEnds>
+          <association Id="86894776-8fdf-427d-9ecd-d26b7eaee0a9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="HelloWorldSaidToReplyToHelloWorld" isAbstract="false">
+            <classMoniker Id="cacb5bc1-9a45-431e-bd17-3b8a844b238b" LastKnownName="ReplyToHelloWorld" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="24a18c78-4a7c-4531-8c77-98d7940cc3f2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1770dd37-c8bf-4569-bb6e-2014caa3a4f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc7af5a1-d1ca-4b3c-af54-c09922eb0ba1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a73af83c-0536-4d10-aa9a-1062b9b3d3ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b85f9da3-ae4c-4f2a-b6fe-ff39157c48aa" name="EventToCommandConverter" profile="CqrsProfile">
+                <appliedStereotypesInternal>
+                  <stereotypeInstance Id="91bc11f3-281f-45a9-9264-c4c157f1e93c" name="AutoGenerated" profile="CqrsProfile">
+                    <elementDefinition Id="906f8da0-2af3-45b2-a77a-669f50fd82c7" />
+                  </stereotypeInstance>
+                </appliedStereotypesInternal>
+                <elementDefinition Id="2441ea5a-d616-4e8c-b4bd-a6d748d5f3b8" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8aa04a81-5094-41bd-9c38-47f53b8548a2">
+                    <propertyInstance Id="ee5aa8db-d0ca-4397-ab68-2c7b1427fee6" name="CommandName" value="HelloWorld::Domain::Akka::Events::ReplyToHelloWorld">
+                      <elementDefinition Id="5d65217a-2b78-413d-b40e-dd4ac49f2bfd" />
+                    </propertyInstance>
+                    <elementDefinition Id="d596e5d5-5789-4983-aa5a-4c881c4a95fe" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c809b5e5-e829-4ede-a58d-e449bcb51939">
+                    <propertyInstance Id="b01de5af-88a6-4166-83f1-fe752d03693c" name="EventName" value="HelloWorld::Domain::Akka::Events::HelloWorldSaid">
+                      <elementDefinition Id="c15d6489-b03f-4fcf-93a5-64d155617746" />
+                    </propertyInstance>
+                    <elementDefinition Id="0da2dde0-9ef1-4222-b59d-2a4015ee021a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cb4b7286-5da9-4bea-99b9-e3099e2be2da">
+                    <propertyInstance Id="7d17ba16-7ebe-476f-bba3-aae31cdb6d64" name="AggregateTechnology" value="Akka">
+                      <elementDefinition Id="f7770842-a319-4bd4-9d35-85cdc6e889bf" />
+                    </propertyInstance>
+                    <elementDefinition Id="1039bed8-a825-4dd0-bee7-d43c086292c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ba1dcd0e-ce58-4c3a-81bd-2f7fecd09ff8" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e7bb584c-9441-4c77-bfd2-ab55ec7a097c" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="056789cc-db07-40db-81a2-c2bdd7b891ce" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c5615e0b-ee9a-4c49-ae3c-fbfb204d2e14" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="b3e83b94-e44a-4980-bcc7-4b7673a4d76c" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f72d3f8c-b5a2-49a5-b31e-3ba6b2c086b5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d466fa0-8919-4fe7-9688-61280db60db5" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="2d466fa0-8919-4fe7-9688-61280db60db5" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c5615e0b-ee9a-4c49-ae3c-fbfb204d2e14" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="56d4b755-b016-4c35-a8a5-cce25ca51208" name="HelloWorldRepliedTo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ee9db0b7-928e-4a79-a3f8-8fddca455626" name="Event" profile="CqrsProfile">
+            <elementDefinition Id="f3fb487c-7abc-4975-bb40-6b529273b86d" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f2163cfa-fe20-471f-b9d5-dc94e6d9ef3a">
+                <propertyInstance Id="e607395c-ce5c-47c2-9be4-369c9e97d9da" name="BuildAutoHandler" value="true">
+                  <elementDefinition Id="bb94f9f8-1826-4e97-bc5b-6bb5ea879a83" />
+                </propertyInstance>
+                <elementDefinition Id="a1d78c02-ff6d-4baa-9253-023ac35db249" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="c45120c4-6ff1-4da3-8b4e-bb73c0a9d607">
+                <propertyInstance Id="ab9e5d9f-59c0-44d6-980e-195359cd1a06" name="EventVisibility" value="Public">
+                  <elementDefinition Id="660e5837-4436-4e5c-9373-316553c9ded1" />
+                </propertyInstance>
+                <elementDefinition Id="6a3da4d0-0b93-4c9b-bb44-f3cab8851cc4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1af8954a-ce97-407b-8e6b-90adfed9c952">
+                <propertyInstance Id="b38d80a4-da6b-45c0-a900-20ea89fa0063" name="EventNotification" value="Caller">
+                  <elementDefinition Id="1c1cad01-cde4-4074-b645-e51047ab8f1a" />
+                </propertyInstance>
+                <elementDefinition Id="47077785-b9cf-49f0-a1e6-a24db9957a24" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fae09535-8ff4-4903-928d-dbdc6051ecbf" />
+        <targetEnds>
+          <association Id="97d925f9-3dbf-4fa3-9cf7-66fc2a75dae7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="HelloWorldRepliedToToEndConversation" isAbstract="false">
+            <classMoniker Id="fe054964-f542-4aa9-87ea-f6051c0435f3" LastKnownName="EndConversation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7720abd4-d36c-4253-92d0-69b4d088d8aa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="45e54820-2e82-47e5-bb2c-7d6b37f1a30b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3f0e9c4-bbd7-4f42-bea3-69e44d3f36a9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45ee404b-6f13-4e93-a696-1235317bc88f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="dd6689ab-b041-4400-97af-98528ae59e10" name="EventToCommandConverter" profile="CqrsProfile">
+                <appliedStereotypesInternal>
+                  <stereotypeInstance Id="0ca4db7e-7a1f-4a94-8b5a-bece2b2fcb45" name="AutoGenerated" profile="CqrsProfile">
+                    <elementDefinition Id="0cf2e557-6d80-448c-92e6-703f1c7a768b" />
+                  </stereotypeInstance>
+                </appliedStereotypesInternal>
+                <elementDefinition Id="6632e0db-fad8-43e4-9f41-a562185ae1bf" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fed7d3cc-e551-422f-b613-1aefdb7604ad">
+                    <propertyInstance Id="5c635af7-bdba-4dcf-b572-1bf87a7fd822" name="CommandName" value="HelloWorld::Domain::Akka::Events::EndConversation">
+                      <elementDefinition Id="0d3a8c4e-0efb-4f22-b1ca-e2af392b27be" />
+                    </propertyInstance>
+                    <elementDefinition Id="da453e3e-51c4-4112-8b2f-bdae97438165" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9bcfceee-1a69-436b-9a02-078e5a7f82a5">
+                    <propertyInstance Id="6bbf6cb8-a0dc-4329-824e-86dfb4d27c8f" name="EventName" value="HelloWorld::Domain::Akka::Events::HelloWorldRepliedTo">
+                      <elementDefinition Id="e9dddac2-7bbc-4a5a-8056-6a59b1cf0ac3" />
+                    </propertyInstance>
+                    <elementDefinition Id="4830f207-3ef9-4cb3-b454-877caac68932" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e7932a98-b02c-4b1a-b9e5-1ee7f00acbdf">
+                    <propertyInstance Id="3803a608-bec6-458f-a490-dafcb5725c2c" name="AggregateTechnology" value="BuiltIn">
+                      <elementDefinition Id="14a2ee59-8926-4910-add1-d22082b5db47" />
+                    </propertyInstance>
+                    <elementDefinition Id="420b9df7-ed68-4bef-8744-a0158bc2ea96" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7ce7e9e7-651b-460a-89ca-36c3df4a19fc" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d53d0d6f-1fe7-4b39-a6ed-f443e2d05c35" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3ea5f21-f9be-4506-9fd1-b18450740884" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="36749412-2a0e-4c9b-8bb4-8942854af79c" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="014b7627-1940-4fbd-8835-cc2ac6527625" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="97b1cb9b-ebf1-4f44-9d32-95c44f7fa230" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5ba740e6-a39c-420a-ab27-2128aa61b91e" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5ba740e6-a39c-420a-ab27-2128aa61b91e" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="36749412-2a0e-4c9b-8bb4-8942854af79c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fe054964-f542-4aa9-87ea-f6051c0435f3" name="EndConversation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="09cbb82d-14ed-4fa5-9a30-b451b5eef086" name="Command" profile="CqrsProfile">
+            <elementDefinition Id="cb58ce2b-1dd0-447f-9e4f-45dbc191edff" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="745f44cd-1fb5-4b8a-a371-d6b707d5e67f">
+                <propertyInstance Id="310c42a2-e300-415f-b853-ef2a9683a1ad" name="CommandType" value="Simple">
+                  <elementDefinition Id="dfb65754-4f04-4cd6-88da-0d8e0a499dd2" />
+                </propertyInstance>
+                <elementDefinition Id="729ed1a1-113e-4015-a564-894b125edde5" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="83aea3f1-89ba-4876-be7f-0800085b66b7">
+                <propertyInstance Id="41f14e6f-06e4-47d3-95ae-d9c231374726" name="AggregateRoot">
+                  <elementDefinition Id="68130da5-bc3b-4981-8652-76ed6ce74a07" />
+                </propertyInstance>
+                <elementDefinition Id="5717d811-7842-4159-a54c-9da428f38894" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1d776b1f-bc43-4ca0-922f-e26f61e833eb">
+                <propertyInstance Id="65f9d1b5-293a-4cec-b84a-7e4456575a29" name="CreatesNewInstance" value="false">
+                  <elementDefinition Id="705336aa-d9a8-4a14-bf58-c24e6032013e" />
+                </propertyInstance>
+                <elementDefinition Id="a8614d64-6f7a-45ec-bf9a-8ae48b4ae0cc" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b7f44171-0b94-4edf-ad7b-b68dd2035bf0">
+                <propertyInstance Id="b6635aaf-5dde-44fb-a6e6-9223526d53cd" name="AutoGenerateWebApiMethod" value="true">
+                  <elementDefinition Id="f9c341d4-b1fe-423b-9ef7-6093e025db7a" />
+                </propertyInstance>
+                <elementDefinition Id="b99e7d15-5fa8-4973-9d0b-f8461fbc34d9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="24018810-10b9-45a5-a485-eb0df32f8ed7">
+                <propertyInstance Id="ac96b3ff-9ab3-4b1c-8c7b-587b8ce4385f" name="WebApiVerb" value="HttpPost">
+                  <elementDefinition Id="176ce186-c776-4730-ac16-dee22b941de0" />
+                </propertyInstance>
+                <elementDefinition Id="4ba66aeb-c3ae-4ad0-bed2-f82286352370" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ca6d2f0f-67f2-4307-bae0-157e0111c22d">
+                <propertyInstance Id="157e25b7-fcf8-4037-ba77-c932a964aec2" name="IsWebApiUrlRsned" value="false">
+                  <elementDefinition Id="f567f4e5-6ca4-468a-b819-3bec7a7694c6" />
+                </propertyInstance>
+                <elementDefinition Id="a8edf3ed-a66b-443e-9fdc-927f14811804" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="25aa0b15-85fd-4f2d-980e-4091041661c1" />
+        <targetEnds>
+          <association Id="683d49de-274a-4833-a06c-8876ecee01a2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="EndConversation" isAbstract="false">
+            <classMoniker Id="24a3e792-3633-4468-83b0-d91e98234c7e" LastKnownName="HelloWorld" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="09b41c68-0612-422c-a933-0fca1a0916e1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ae8ee1d6-7661-443a-9ae8-2484f29ddb02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2cf14ec2-8848-4fb0-b879-18293c65af13" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="644248ff-6478-4b6f-a49a-3aeab57d09e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="792bc62c-fd1e-4d8d-a4b3-424e2e54b63a" name="CommandHandler" profile="CqrsProfile">
+                <elementDefinition Id="66fea458-37e0-4851-acb6-7105c9cdcef6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af50be2e-f68e-4c26-8440-5ca754d4cbd5">
+                    <propertyInstance Id="896d227e-d669-491d-b576-19e783ffaae3" name="AggregateRootMethod">
+                      <elementDefinition Id="284613e7-b032-4567-8cf3-e360e517b4ee" />
+                    </propertyInstance>
+                    <elementDefinition Id="9d4376bc-96d2-454e-97ca-8f02233cc6d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b7f9bdd7-b078-4065-bff6-7ca92bb1b10a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7eb08e5f-0ecb-499c-94d1-f5683963cff7" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="240cc8f1-ef2d-4634-9b93-0b575f73187b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3cbc7e26-0424-415b-8c7d-07287855b72c" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3cbc7e26-0424-415b-8c7d-07287855b72c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7f872a70-d51c-41aa-94d3-88bc595ee08a" name="ConversationEnded" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a4d6b3e5-0499-4224-a088-ad3f9692b20a" name="Event" profile="CqrsProfile">
+            <elementDefinition Id="b3d3da1f-6978-443e-a6f0-5e51ebd24c11" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="99d07d90-728d-4f1f-aff3-e3e254168f2c">
+                <propertyInstance Id="a1e95f2d-2a17-4c55-b286-a6cdd3005891" name="BuildAutoHandler" value="true">
+                  <elementDefinition Id="72e6ed77-d317-40df-8c71-1d9721025ba0" />
+                </propertyInstance>
+                <elementDefinition Id="1fb4a03a-cb3a-416e-8d80-81985eec63a8" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7b6747eb-df55-4e1c-9b15-d3e2d30b24fa">
+                <propertyInstance Id="3dc18737-ad37-4cf5-a92a-e12548f3c9e9" name="EventVisibility" value="Public">
+                  <elementDefinition Id="2b2d854d-4b2d-4d59-8080-c95b50f17682" />
+                </propertyInstance>
+                <elementDefinition Id="36591910-a28b-4a35-be72-a2d2ba442754" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="75950e35-4232-4b85-a203-1f312e3b9f13">
+                <propertyInstance Id="abd219ce-0036-489a-99a5-68471991362a" name="EventNotification" value="Caller">
+                  <elementDefinition Id="a0ece10f-b5ef-4f5e-9a45-1fc6a2737ab1" />
+                </propertyInstance>
+                <elementDefinition Id="5194159c-3db1-419e-a1bf-3cb43b143905" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="a257c04c-a823-4f6a-8f0e-0a5af30f9e1c" />
+        <ownedAttributesInternal>
+          <property Id="0c872e6f-f37e-4983-ba12-222ce6c9dfc3" name="Message" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1f9b65bd-36be-4864-af96-8d7481fe00c9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3aca155f-c97b-425c-95ac-0da5f0b87fa2" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3aca155f-c97b-425c-95ac-0da5f0b87fa2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="91543a8e-2090-4421-9c99-fe7e6eeb2b4c">
+    <elementDefinition Id="59c48a70-3b33-46b8-af2d-522b8a24054e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ff28bfa1-ed6f-49d6-98b2-c8b455d4aaf9">
+        <profileInstance Id="5482e71c-ea27-42ef-b6e9-ed9b962afa2e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c1f0afba-99de-4bf3-aa4e-8c6a0c3a6b9c">
+        <profileInstance Id="be204b16-55eb-4e9b-98c4-11ba990aa7ca" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8c186252-6307-4164-b8f7-67717dbd2cae">
+        <profileInstance Id="3844d096-7121-450e-8a04-34116840482d" name="TextTemplateBindings">
+          <elementDefinition Id="33a94f70-7244-4b7f-8eca-2f6eb8046366" />
+        </profileInstance>
+        <elementDefinition Id="39c64520-84bb-4edc-913b-927b3d4f0ea1" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4863bd15-8b40-4a8d-bef0-3e6c71a772d6">
+        <profileInstance Id="0008bb3f-69b6-479c-b345-9d58f8fd7bdb" name="CSharpProfile">
+          <elementDefinition Id="a3bfa79f-f172-4b96-905e-1d07a7c47790" />
+        </profileInstance>
+        <elementDefinition Id="7d2b5b96-098d-47ee-909f-2b1d9227662a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b0355462-f699-46c3-9748-5125fcf58118">
+        <profileInstance Id="8223cbf9-318c-4237-85bc-d3bc509c6270" name="CqrsProfile">
+          <elementDefinition Id="30bddb7b-8e37-450f-9e12-86121e9246b4" />
+        </profileInstance>
+        <elementDefinition Id="62efbd93-11d9-46ef-a297-c298c0cb9b16" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

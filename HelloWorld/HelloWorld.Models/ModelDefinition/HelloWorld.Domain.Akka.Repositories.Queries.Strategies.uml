@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="fc4ddcff-6ffd-40e4-a182-853b1c7ad6a5"
+  name="Strategies" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="98abb9bb-052d-4dcf-a878-92c8116929ab"
+        name="HelloWorldQueryStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="45cf434e-b51f-4ac3-a84a-dd0ffe6da31c"
+            name="QueryStrategy"
+            profile="CqrsProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0869928-6761-4b0f-a8bf-5c3cfe6961fa">
+                <propertyInstance
+                  Id="36fd4f7b-6fbd-4dbd-ba7c-beb1f3651d8e"
+                  name="AggregateRootName" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ed11215-58df-40b7-bfb7-cc6ea2c31136">
+                <propertyInstance
+                  Id="78b6f38b-e5b5-46cb-9224-8fc4a38d3e48"
+                  name="EntityName"
+                  value="HelloWorldEntityEntity" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

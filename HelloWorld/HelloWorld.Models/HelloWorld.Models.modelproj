@@ -22,6 +22,20 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="HelloWorld\HelloWorld-Circular.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HelloWorld\HelloWorld-Linear.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="HelloWorld\HelloWorld-Linear.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HelloWorld\HelloWorld-Linear.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="HelloWorld\HelloWorld-Circular.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>HelloWorld\HelloWorld-Circular.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Cqrs.uml">
       <SubType>Content</SubType>
     </Content>
@@ -46,6 +60,33 @@
     <Content Include="ModelDefinition\HelloWorld.Domain.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Events.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Events.Handlers.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Entities.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Repositories.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Services.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Repositories.Queries.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Repositories.Queries.Strategies.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\HelloWorld.Domain.Akka.Commands.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\System.Collections.Generic.uml">
       <SubType>Content</SubType>
     </Content>
@@ -55,6 +96,9 @@
     <Content Include="ModelDefinition\System.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="HelloWorld\" />
+    <Folder Include="HelloWorld\Domain\" />
+    <Folder Include="HelloWorld\Domain\Akka\" />
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\HelloWorld.Models.uml">
       <SubType>Content</SubType>

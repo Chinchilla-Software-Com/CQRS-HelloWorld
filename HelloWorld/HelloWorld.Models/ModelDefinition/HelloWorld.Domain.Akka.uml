@@ -1,1 +1,282 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="94e49b04-36aa-4bb9-baa4-0f29f9863291"
+  name="Akka" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="f255728b-67ec-49c7-a59e-9710fe463738"
+      name="Module"
+      profile="CqrsProfile" />
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b09b8e49-1f7f-466c-94a2-6ec7d8b3e936"
+        name="HelloWorld"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5d72cb71-e641-4f43-bc60-2682d6c0c613"
+            name="AggregateRoot"
+            profile="CqrsProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cfb6a0b9-f040-475e-9c41-056b84e33477">
+                <propertyInstance
+                  Id="70635dc9-3a02-4b63-a744-c664192ed41e"
+                  name="BuildCreateCommand"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b644408-8bbd-4d08-95c4-1c3472df21c3">
+                <propertyInstance
+                  Id="d0278f0d-eaca-4cd1-a2be-45509bf4b1b1"
+                  name="BuildUpdateCommand"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb50395d-37f4-4c9d-8943-aa99b32d17e9">
+                <propertyInstance
+                  Id="9e2583a2-aab0-4212-9ab2-f75c78b2b2fd"
+                  name="BuildDeleteCommand"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67f14413-380e-4b03-995d-c5079361c38b">
+                <propertyInstance
+                  Id="2cc88f5d-f4ab-4876-9983-777c8b9bc401"
+                  name="BuildCreateServiceMethod"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e16e8d4-105e-4bda-b73a-de19de670025">
+                <propertyInstance
+                  Id="d3794a11-43e2-4129-a7e8-ba2bce07774d"
+                  name="BuildUpdateServiceMethod"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="203dbdf5-84f6-480b-bc1f-669a5525f2b3">
+                <propertyInstance
+                  Id="5dd07c71-a526-4e13-9baf-13df80cd5021"
+                  name="BuildDeleteServiceMethod"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="770de31c-a653-46df-820c-bb5b649a03db">
+                <propertyInstance
+                  Id="cca2403f-7f8a-407f-b02f-87cb8ec109ef"
+                  name="BuildCreateControllerMethod"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cdf94758-a73b-4b7c-aab7-39bf3d7504b1">
+                <propertyInstance
+                  Id="c01aab91-7f3d-4ac5-820e-60911cf87521"
+                  name="BuildUpdateControllerMethod"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3c952ce-9b10-489c-b2c3-8e60618e645b">
+                <propertyInstance
+                  Id="36d2d487-96e3-4e95-aaf5-5d16042adbce"
+                  name="BuildDeleteControllerMethod"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e98a1d4-1965-47d7-bc80-70102e186d91">
+                <propertyInstance
+                  Id="af041cef-1e49-4c35-8fbb-fdb5f95704c1"
+                  name="BuildRepository"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c75ab04c-fc8a-4912-89aa-5058a373e18d">
+                <propertyInstance
+                  Id="8b8b0e80-ef94-41c2-9ca1-81246cdeae6f"
+                  name="BuildService"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6d487d9-fff5-435b-9f57-e068d2ea7975">
+                <propertyInstance
+                  Id="54b7bc55-5319-44b4-92e2-47473543c14d"
+                  name="BuildDataStore"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47b2b83a-2fcc-41d6-8dc8-4f207c6afcff">
+                <propertyInstance
+                  Id="ff37221a-8391-4ca2-a5a8-22405d498837"
+                  name="IsSnapshotable"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="59974367-a8eb-4925-89f6-17695dac3ec6">
+                <propertyInstance
+                  Id="fa2715c3-76b6-4633-bfa3-a40d184a450f"
+                  name="AutoGenerateAllProperties"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc605fae-ef89-4381-a9e7-23847a9cb467">
+                <propertyInstance
+                  Id="2c712070-7892-4ce0-9e10-cba635163e7a"
+                  name="AggregateTechnology"
+                  value="Akka" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="e6981432-2993-48e8-a78c-b90fe71767b6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="SaeHelloWorld"
+            isAbstract="false">
+            <classMoniker
+              Id="53205f90-e24a-4541-848b-bca5c269f33f"
+              LastKnownName="HelloWorldSaid"
+              LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d92b7f0-b3e6-411c-9120-cb03422ba032"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d74f872-8946-41e3-b09c-b80a7427837f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="62fd8327-93ce-498a-93f5-e0a9c12ce8c7"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="ReplyToHelloWorld"
+            isAbstract="false">
+            <classMoniker
+              Id="fae09535-8ff4-4903-928d-dbdc6051ecbf"
+              LastKnownName="HelloWorldRepliedTo"
+              LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca3b6753-cc39-4819-a746-1fe5719cfdcc"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="faa51310-ddf4-4e78-800b-e80298560800"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bae4abee-ba55-4be1-969a-7ca5c1c2a2d2"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a257c04c-a823-4f6a-8f0e-0a5af30f9e1c"
+              LastKnownName="ConversationEnded"
+              LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ac70c75-8dde-4b2e-860f-b61b62abdc0b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c22ec23-4d0b-4aad-a032-2aaa937b11c7"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="317b0126-4012-44a7-8ea7-49c5cfff7b8f"
+        LastKnownName="Commands"
+        LastKnownLocation="HelloWorld.Domain.Akka.Commands.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="48f9c857-b821-4090-ab20-d961d0fae1a6"
+        LastKnownName="Events"
+        LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cc68aa0f-911a-4f2e-9da8-0ccfddb6465a"
+        LastKnownName="Entities"
+        LastKnownLocation="HelloWorld.Domain.Akka.Entities.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7cedada4-e3e7-44f9-bca4-db2b592dad8c"
+        LastKnownName="Repositories"
+        LastKnownLocation="HelloWorld.Domain.Akka.Repositories.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1dd17c33-e6ca-4cd0-88ce-af50cae20ada"
+        LastKnownName="Services"
+        LastKnownLocation="HelloWorld.Domain.Akka.Services.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

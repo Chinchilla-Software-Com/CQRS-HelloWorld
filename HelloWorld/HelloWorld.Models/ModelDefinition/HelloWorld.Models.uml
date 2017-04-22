@@ -1,7 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="59c48a70-3b33-46b8-af2d-522b8a24054e" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="a5d0c4ea-a919-42e3-855f-19ad54cb9d77">
+      <body>Step 1
+This is where things start</body>
+      <annotatedElements>
+        <classMoniker
+          Id="7667a4d6-ef9f-4be2-b208-b6107981575b"
+          LastKnownName="SayHelloWorld"
+          LastKnownLocation="HelloWorld.Domain.Akka.Commands.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="51ab3cd7-b92f-455d-9551-1a6e9f6b3982">
+      <body>Step 2
+First response</body>
+      <annotatedElements>
+        <classMoniker
+          Id="ca2e1514-949f-4cba-b486-b10922b6b643"
+          LastKnownName="ReplyToHelloWorld"
+          LastKnownLocation="HelloWorld.Domain.Akka.Commands.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="6eb00116-9fd8-4af6-8834-3022630ba464">
+      <body>Step 1
+First event raised</body>
+      <annotatedElements>
+        <classMoniker
+          Id="53205f90-e24a-4541-848b-bca5c269f33f"
+          LastKnownName="HelloWorldSaid"
+          LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="1fb9a8e3-883e-4e49-b6f4-e64bf2344596">
+      <body>Step 2
+Second event raised</body>
+      <annotatedElements>
+        <classMoniker
+          Id="fae09535-8ff4-4903-928d-dbdc6051ecbf"
+          LastKnownName="HelloWorldRepliedTo"
+          LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7a7e7f22-7326-4143-a0a6-4c917fcf32b7">
+      <body>Step 3
+Second Response</body>
+      <annotatedElements>
+        <classMoniker
+          Id="25aa0b15-85fd-4f2d-980e-4091041661c1"
+          LastKnownName="EndConversation"
+          LastKnownLocation="HelloWorld.Domain.Akka.Commands.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="5f8b3660-e7de-420e-a8af-e0f0d73a6e33">
+      <body>Step 3
+This is where things end</body>
+      <annotatedElements>
+        <classMoniker
+          Id="a257c04c-a823-4f6a-8f0e-0a5af30f9e1c"
+          LastKnownName="ConversationEnded"
+          LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance
       Id="de3ad04a-caa8-4e2a-a025-353e55479b1b"
