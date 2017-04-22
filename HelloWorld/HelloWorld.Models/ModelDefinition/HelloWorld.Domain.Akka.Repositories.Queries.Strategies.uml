@@ -35,5 +35,67 @@
         </appliedStereotypesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3c54b475-a725-4b08-b3b0-075e60ab62df"
+        name="DailyNewConversationsQueryStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3ebaead0-0b45-4137-8cbe-c5f6cd15cd0c"
+            name="QueryStrategy"
+            profile="CqrsProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="559445b4-0a34-412c-a8df-eb245c66f468">
+                <propertyInstance
+                  Id="7b4db889-28e5-4734-8017-0edd0e106435"
+                  name="AggregateRootName" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95c2f11d-7c93-4c22-aa1c-a48595c8710a">
+                <propertyInstance
+                  Id="63b83734-31ed-42fa-a19f-534e9865b9a8"
+                  name="EntityName"
+                  value="DailyNewConversationsEntity" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e50db436-a8c8-4f6e-a616-f92ed100942a"
+        name="DailyNewConversationsReportQueryStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7c30157f-d3b0-4ea5-a5da-d115054917df"
+            name="QueryStrategy"
+            profile="CqrsProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e9c4c834-3a44-4e4c-a571-7681b3c6f39b">
+                <propertyInstance
+                  Id="7abed551-d625-40a9-b64d-7e6a21ef77a6"
+                  name="AggregateRootName" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0dedcaf-117b-4580-91d2-20c9f24dced2">
+                <propertyInstance
+                  Id="334f0085-1fbc-4dcc-aea2-aa9d8a8eab4e"
+                  name="EntityName"
+                  value="DailyNewConversationsReportEntity" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>

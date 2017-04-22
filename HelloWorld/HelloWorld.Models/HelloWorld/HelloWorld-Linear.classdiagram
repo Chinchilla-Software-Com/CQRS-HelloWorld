@@ -49,6 +49,14 @@ Second Response</body>
         <classMoniker Id="b1e2d41e-567a-43b1-91a3-1d4637f2528d" LastKnownName="EndConversation" />
       </annotatedElements>
     </comment>
+    <comment Id="c8ce0c1b-01aa-4d09-85b9-7e26c4f61b1f">
+      <elementDefinition Id="e01eaaa2-4868-4cca-a362-131c8c55ac00" />
+      <body>Step 1
+Daily report instantly updated</body>
+      <annotatedElements>
+        <classMoniker Id="0cccfa6f-96e4-499c-9507-111a469e17ea" LastKnownName="DailyNewConversationsReport" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="ef307c3b-3875-4d0c-b6ea-89f63aa62ef1" name="namespace" profile="CSharpProfile">
@@ -122,38 +130,6 @@ Second Response</body>
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="155d5c85-c937-4f15-9afc-9d700d91a8fd">
-      <profileInstance Id="a2c9a67a-e617-47c5-8219-fa6a5becd217" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="87cf00e8-ea8f-4b36-afb5-e89b909eeb64">
-      <profileInstance Id="8561a3ba-9aa2-46ec-87a8-5b1f376e331e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c2cf59c7-9ea7-443d-9f8a-8bb1bb5b2d12">
-      <profileInstance Id="785b5573-0047-4e4b-8b01-6a77b3077ba2" name="TextTemplateBindings">
-        <elementDefinition Id="33a94f70-7244-4b7f-8eca-2f6eb8046366" />
-      </profileInstance>
-      <elementDefinition Id="39c64520-84bb-4edc-913b-927b3d4f0ea1" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="d12291b4-27a1-49af-b9d9-53ca31da5735">
-      <profileInstance Id="112a8117-4e1f-4879-82d5-c7e4a61a3987" name="CSharpProfile">
-        <elementDefinition Id="a3bfa79f-f172-4b96-905e-1d07a7c47790" />
-      </profileInstance>
-      <elementDefinition Id="7d2b5b96-098d-47ee-909f-2b1d9227662a" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="41b5e9fb-41b4-4209-804b-afd95751b9ba">
-      <profileInstance Id="ccc1eafa-2eed-4c79-8bfa-e650f1ffa9b4" name="CqrsProfile">
-        <elementDefinition Id="30bddb7b-8e37-450f-9e12-86121e9246b4" />
-      </profileInstance>
-      <elementDefinition Id="62efbd93-11d9-46ef-a297-c298c0cb9b16" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="8a9f0478-29e3-466a-8b7b-f9b063e9bb91" name="SayHelloWorld" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -202,7 +178,7 @@ Second Response</body>
         </appliedStereotypesInternal>
         <elementDefinition Id="7667a4d6-ef9f-4be2-b208-b6107981575b" />
         <targetEnds>
-          <association Id="aeaceabb-e8a1-49cc-9872-aca528c29c80" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SaeHelloWorld" isAbstract="false">
+          <association Id="aeaceabb-e8a1-49cc-9872-aca528c29c80" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SayHelloWorld" isAbstract="false">
             <classMoniker Id="8c5d96f8-36ae-461a-886c-be78b07665e6" LastKnownName="HelloWorld" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -348,7 +324,7 @@ Second Response</body>
         </appliedStereotypesInternal>
         <elementDefinition Id="b09b8e49-1f7f-466c-94a2-6ec7d8b3e936" />
         <targetEnds>
-          <association Id="60f90f27-d1e1-4011-a4ef-af4a3f34a823" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SaeHelloWorld" isAbstract="false">
+          <association Id="60f90f27-d1e1-4011-a4ef-af4a3f34a823" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="SayHelloWorld" isAbstract="false">
             <classMoniker Id="5a0df34c-feb2-481f-bf87-f1b7ae85f20c" LastKnownName="HelloWorldSaid" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -380,7 +356,7 @@ Second Response</body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="62fd8327-93ce-498a-93f5-e0a9c12ce8c7" />
           </association>
-          <association Id="ce0a4394-f349-475a-bdae-bf77a8d9e25d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+          <association Id="ce0a4394-f349-475a-bdae-bf77a8d9e25d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="EndConversation" isAbstract="false">
             <classMoniker Id="63fa7d81-026d-467a-b022-522af9741e8b" LastKnownName="ConversationEnded" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -464,7 +440,7 @@ Second Response</body>
                     <elementDefinition Id="0da2dde0-9ef1-4222-b59d-2a4015ee021a" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances Id="66cc8f42-f66d-489a-8fa0-240dc42aa087">
-                    <propertyInstance Id="fdefde5e-d719-4c6a-b38b-5b2673da040e" name="AggregateTechnology" value="Akka">
+                    <propertyInstance Id="fdefde5e-d719-4c6a-b38b-5b2673da040e" name="AggregateTechnology" value="BuiltIn">
                       <elementDefinition Id="f7770842-a319-4bd4-9d35-85cdc6e889bf" />
                     </propertyInstance>
                     <elementDefinition Id="1039bed8-a825-4dd0-bee7-d43c086292c0" />
@@ -473,6 +449,52 @@ Second Response</body>
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="ba1dcd0e-ce58-4c3a-81bd-2f7fecd09ff8" />
+          </association>
+          <association Id="372c976f-d2af-4e9f-b38c-f7356f07ebc9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="HelloWorldSaidUpdatesDailyNewConversationsReport" isAbstract="false">
+            <classMoniker Id="0cccfa6f-96e4-499c-9507-111a469e17ea" LastKnownName="DailyNewConversationsReport" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3421817-6935-4fab-85d5-66484df26bce" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3c0b6564-a98f-472b-aa02-32f3a330fca1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8dc0e2a1-d9b0-4f55-8111-fc5424c05d44" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5c0c4d63-2f21-4325-9ea2-6e834a803442" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a1107cb6-29d8-4064-b642-55056e2e3f90" name="EventHandler" profile="CqrsProfile">
+                <appliedStereotypesInternal>
+                  <stereotypeInstance Id="67ba030b-0988-48c8-beeb-42b9650f45a0" name="AutoGenerated" profile="CqrsProfile">
+                    <elementDefinition Id="8f97f817-0552-4e41-89e2-032dd9ae076c" />
+                  </stereotypeInstance>
+                </appliedStereotypesInternal>
+                <elementDefinition Id="06b3f480-ab13-4901-933c-b47a9bae9817" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ef6c117c-b443-4e5a-a5c1-236072e50478">
+                    <propertyInstance Id="96fd0c39-1495-461d-ae7a-59f1aec6a179" name="EntityName" value="HelloWorld::Domain::Akka::Events::DailyNewConversationsReport">
+                      <elementDefinition Id="80502018-e76b-4aae-9568-327e5b0f30f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="faf36cd5-51e0-4bb4-abbf-76f2c0ceda01" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bd00414e-490f-45e8-ba62-e0b50fb5e96b">
+                    <propertyInstance Id="b482608d-bb6e-4a83-9718-5febb801203d" name="EventName" value="HelloWorld::Domain::Akka::Events::HelloWorldSaid">
+                      <elementDefinition Id="a71dca25-f7d1-40bb-95cb-7f9f77a1f51f" />
+                    </propertyInstance>
+                    <elementDefinition Id="7d9161cc-4749-444f-9739-dc230384e27a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="214fb326-ea8f-4b3f-9010-be17c64d96ee">
+                    <propertyInstance Id="b68fdc13-5072-42e0-b1f4-13e904c07006" name="AggregateTechnology" value="Akka">
+                      <elementDefinition Id="a4b3e2aa-0be2-4838-b9c9-881cc3ba2e52" />
+                    </propertyInstance>
+                    <elementDefinition Id="1cc6387c-8702-4c2a-ab3d-992c0eb46cca" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c95b8232-a84b-46e3-9e4a-22a3dd655c79" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -730,7 +752,7 @@ Second Response</body>
                     <elementDefinition Id="4830f207-3ef9-4cb3-b454-877caac68932" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances Id="2a398b61-3e19-40d5-ab3e-07896c01e27e">
-                    <propertyInstance Id="86db202d-110b-439d-914d-1bb0b6e414c4" name="AggregateTechnology" value="BuiltIn">
+                    <propertyInstance Id="86db202d-110b-439d-914d-1bb0b6e414c4" name="AggregateTechnology" value="Akka">
                       <elementDefinition Id="14a2ee59-8926-4910-add1-d22082b5db47" />
                     </propertyInstance>
                     <elementDefinition Id="420b9df7-ed68-4bef-8744-a0158bc2ea96" />
@@ -795,8 +817,118 @@ Second Response</body>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0cccfa6f-96e4-499c-9507-111a469e17ea" name="DailyNewConversationsReport" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="0ff69c63-51ba-4da6-a6dc-1eda000490c6" name="Entity" profile="CqrsProfile">
+            <elementDefinition Id="27496d52-f982-483a-ba9e-e144032c0966" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="37823259-12be-4433-8505-8864f5b90f18">
+                <propertyInstance Id="f31054b7-d03d-4af6-b052-7801d267be96" name="TableName">
+                  <elementDefinition Id="f94143b0-0f10-40ef-9332-3c7b84668ff0" />
+                </propertyInstance>
+                <elementDefinition Id="50baf24d-c97a-4fae-99c2-a0313ea1440e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="24cf4e47-5810-4801-a0f1-b0e55ed18164">
+                <propertyInstance Id="87527e31-c9c2-4f5e-a02a-1f6090987be4" name="BuildRepository" value="true">
+                  <elementDefinition Id="93f86e96-b47a-47db-801c-2665025114d6" />
+                </propertyInstance>
+                <elementDefinition Id="14e9c424-ceb7-4ffc-a12e-5535f6520165" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="eef38a97-c57b-4049-aaa3-719c72879e34">
+                <propertyInstance Id="880734a3-f01b-4997-a570-1d4dba155f53" name="BuildService" value="true">
+                  <elementDefinition Id="1f1e8d5c-a61f-49ef-a03d-41ea304af60f" />
+                </propertyInstance>
+                <elementDefinition Id="f93ee894-4f18-4f55-832c-15879e8d5e82" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d1d6b72c-a835-40b2-ba40-939b70527c72">
+                <propertyInstance Id="a720a3ed-fad8-4c69-9275-41a6f2d89738" name="BuildDataStore" value="true">
+                  <elementDefinition Id="ea2e7cd9-3f38-4eed-9ed5-8aa5e348ae3b" />
+                </propertyInstance>
+                <elementDefinition Id="68f9ad17-d052-4b81-9782-2b6d68b90f2a" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9b0d4b08-02cb-4543-acfc-08b2b1eec497">
+                <propertyInstance Id="c86cbefc-9fdf-4fde-9b71-4fa21c49a577" name="AutoGenerateAllProperties" value="true">
+                  <elementDefinition Id="fc0f51bd-b49c-4eb5-aea6-8ceb4e451e53" />
+                </propertyInstance>
+                <elementDefinition Id="f59b84f8-94a2-4f28-a05c-959091a88959" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0ab6fc24-2c32-4cdc-bf99-88d2adbeb90f">
+                <propertyInstance Id="c825cf1b-a4e5-4969-90fe-5af34ad81fa5" name="OverrideDomainEntityPersistenceTechnology" value="false">
+                  <elementDefinition Id="9f102daf-c18f-43ee-9d88-328040e9473e" />
+                </propertyInstance>
+                <elementDefinition Id="ef79cd02-f63a-4ff5-a231-030db1dfda98" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4cab37d8-000f-491a-ac7b-2464d93b780b">
+                <propertyInstance Id="31d66241-dd1b-431c-a871-e111dba67322" name="EntityPersistenceTechnology" value="SimplifiedSql">
+                  <elementDefinition Id="c6db8827-3ad8-4491-beb4-dd2f858a942f" />
+                </propertyInstance>
+                <elementDefinition Id="5da0ec10-2533-4c21-9f76-de384fc52d3c" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fc0686ba-1d98-4767-b304-f5f36c1090e3" />
+        <ownedAttributesInternal>
+          <property Id="49fbfbaf-dfe7-42c5-8098-108672d6b094" name="Number" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15178dfb-fd1e-474b-bd7f-282a73655753" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e4939035-8e37-44a6-a68c-2672f85e27e9" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="c47e1dca-fea0-4340-9113-7fd4190085ad" name="Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="134f6529-9d53-48ae-a613-cf0418c052c6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8fc74846-eaea-45c8-b41c-8987603568e0" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e4939035-8e37-44a6-a68c-2672f85e27e9" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8fc74846-eaea-45c8-b41c-8987603568e0" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="System::DateTime">
+        <elementDefinition Id="e59ba561-fc53-460a-bd45-1fe308336987" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="bd319490-365f-4d33-a9d6-56fded9c4678">
     <elementDefinition Id="59c48a70-3b33-46b8-af2d-522b8a24054e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="155d5c85-c937-4f15-9afc-9d700d91a8fd">
+        <profileInstance Id="a2c9a67a-e617-47c5-8219-fa6a5becd217" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="87cf00e8-ea8f-4b36-afb5-e89b909eeb64">
+        <profileInstance Id="8561a3ba-9aa2-46ec-87a8-5b1f376e331e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c2cf59c7-9ea7-443d-9f8a-8bb1bb5b2d12">
+        <profileInstance Id="785b5573-0047-4e4b-8b01-6a77b3077ba2" name="TextTemplateBindings">
+          <elementDefinition Id="33a94f70-7244-4b7f-8eca-2f6eb8046366" />
+        </profileInstance>
+        <elementDefinition Id="39c64520-84bb-4edc-913b-927b3d4f0ea1" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d12291b4-27a1-49af-b9d9-53ca31da5735">
+        <profileInstance Id="112a8117-4e1f-4879-82d5-c7e4a61a3987" name="CSharpProfile">
+          <elementDefinition Id="a3bfa79f-f172-4b96-905e-1d07a7c47790" />
+        </profileInstance>
+        <elementDefinition Id="7d2b5b96-098d-47ee-909f-2b1d9227662a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="41b5e9fb-41b4-4209-804b-afd95751b9ba">
+        <profileInstance Id="ccc1eafa-2eed-4c79-8bfa-e650f1ffa9b4" name="CqrsProfile">
+          <elementDefinition Id="30bddb7b-8e37-450f-9e12-86121e9246b4" />
+        </profileInstance>
+        <elementDefinition Id="62efbd93-11d9-46ef-a297-c298c0cb9b16" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

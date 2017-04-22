@@ -138,7 +138,7 @@
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
-            name="SaeHelloWorld"
+            name="SayHelloWorld"
             isAbstract="false">
             <classMoniker
               Id="53205f90-e24a-4541-848b-bca5c269f33f"
@@ -214,6 +214,7 @@
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
+            name="EndConversation"
             isAbstract="false">
             <classMoniker
               Id="a257c04c-a823-4f6a-8f0e-0a5af30f9e1c"

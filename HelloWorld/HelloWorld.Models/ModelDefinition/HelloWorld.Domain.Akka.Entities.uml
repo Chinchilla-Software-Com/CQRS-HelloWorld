@@ -74,5 +74,108 @@
         </appliedStereotypesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fc0686ba-1d98-4767-b304-f5f36c1090e3"
+        name="DailyNewConversationsReport"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="27496d52-f982-483a-ba9e-e144032c0966"
+            name="Entity"
+            profile="CqrsProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="50baf24d-c97a-4fae-99c2-a0313ea1440e">
+                <propertyInstance
+                  Id="f94143b0-0f10-40ef-9332-3c7b84668ff0"
+                  name="TableName" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="14e9c424-ceb7-4ffc-a12e-5535f6520165">
+                <propertyInstance
+                  Id="93f86e96-b47a-47db-801c-2665025114d6"
+                  name="BuildRepository"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f93ee894-4f18-4f55-832c-15879e8d5e82">
+                <propertyInstance
+                  Id="1f1e8d5c-a61f-49ef-a03d-41ea304af60f"
+                  name="BuildService"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="68f9ad17-d052-4b81-9782-2b6d68b90f2a">
+                <propertyInstance
+                  Id="ea2e7cd9-3f38-4eed-9ed5-8aa5e348ae3b"
+                  name="BuildDataStore"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f59b84f8-94a2-4f28-a05c-959091a88959">
+                <propertyInstance
+                  Id="fc0f51bd-b49c-4eb5-aea6-8ceb4e451e53"
+                  name="AutoGenerateAllProperties"
+                  value="true" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef79cd02-f63a-4ff5-a231-030db1dfda98">
+                <propertyInstance
+                  Id="9f102daf-c18f-43ee-9d88-328040e9473e"
+                  name="OverrideDomainEntityPersistenceTechnology"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5da0ec10-2533-4c21-9f76-de384fc52d3c">
+                <propertyInstance
+                  Id="c6db8827-3ad8-4491-beb4-dd2f858a942f"
+                  name="EntityPersistenceTechnology"
+                  value="SimplifiedSql" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="15178dfb-fd1e-474b-bd7f-282a73655753"
+            name="Number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="HelloWorld.Models.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="134f6529-9d53-48ae-a613-cf0418c052c6"
+            name="Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="e59ba561-fc53-460a-bd45-1fe308336987"
+                LastKnownName="DateTime"
+                LastKnownLocation="System.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>
