@@ -69,6 +69,72 @@ This is where things end</body>
           LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="d7723d6c-0558-4be5-a447-f189c68da945">
+      <body>Step 1
+This is where things start</body>
+      <annotatedElements>
+        <classMoniker
+          Id="7667a4d6-ef9f-4be2-b208-b6107981575b"
+          LastKnownName="SayHelloWorld"
+          LastKnownLocation="HelloWorld.Domain.Akka.Commands.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="08f18627-de3c-4bed-b682-d4ec22980db1">
+      <body>Step 1
+First event raised</body>
+      <annotatedElements>
+        <classMoniker
+          Id="53205f90-e24a-4541-848b-bca5c269f33f"
+          LastKnownName="HelloWorldSaid"
+          LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="0220aa14-5356-4e08-8699-0c28a4969ed1">
+      <body>Step 2
+First response</body>
+      <annotatedElements>
+        <classMoniker
+          Id="ca2e1514-949f-4cba-b486-b10922b6b643"
+          LastKnownName="ReplyToHelloWorld"
+          LastKnownLocation="HelloWorld.Domain.Akka.Commands.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="2c267092-78a4-4bcb-8548-f23665a845e3">
+      <body>Step 2
+Second event raised</body>
+      <annotatedElements>
+        <classMoniker
+          Id="fae09535-8ff4-4903-928d-dbdc6051ecbf"
+          LastKnownName="HelloWorldRepliedTo"
+          LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="c5c5d7c1-87a8-4f97-bf3a-c5c3226c14d3">
+      <body>Step 3
+This is where things end</body>
+      <annotatedElements>
+        <classMoniker
+          Id="a257c04c-a823-4f6a-8f0e-0a5af30f9e1c"
+          LastKnownName="ConversationEnded"
+          LastKnownLocation="HelloWorld.Domain.Akka.Events.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="517cc8a2-af66-482b-9e0a-50c7bdbf2cb3">
+      <body>Step 3
+Second Response</body>
+      <annotatedElements>
+        <classMoniker
+          Id="25aa0b15-85fd-4f2d-980e-4091041661c1"
+          LastKnownName="EndConversation"
+          LastKnownLocation="HelloWorld.Domain.Akka.Commands.uml" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance
