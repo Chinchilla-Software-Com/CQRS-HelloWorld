@@ -78,6 +78,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelloWorld\Domain\Akka\Entities\Entities\DailyNewConversationsReportEntity.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Entities\Entities\IDailyNewConversationsReportEntity.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Events\ConversationEnded.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Events\HelloWorldRepliedTo.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Events\HelloWorldSaid.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\HelloWorldExampleAggregateServiceResolvers.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\HelloWorldExampleAggregateServiceResolvers.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\HelloWorldExampleServiceResolvers.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\HelloWorldExampleServiceResolvers.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\IHelloWorldExampleAggregateService.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\IHelloWorldExampleService.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

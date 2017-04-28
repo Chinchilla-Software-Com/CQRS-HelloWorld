@@ -91,6 +91,8 @@
     <Compile Include="Configuration\DomainConfiguration.cs" />
     <Compile Include="Configuration\ServicePointManagerConfiguration.cs" />
     <Compile Include="HelloWorld\DomainHost.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\Host\HelloWorldExampleAggregateServiceHost.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\Host\HelloWorldExampleServiceHost.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +107,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

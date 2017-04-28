@@ -22,7 +22,7 @@ using Ninject.Modules;
 
 namespace HelloWorld.Domain
 {
-	[GeneratedCode("CQRS UML Code Generator", "Ungenerated")]
+	[GeneratedCode("CQRS UML Code Generator", "1.601.932")]
 	public abstract partial class DomainHost<THostModule>
 			where THostModule : NinjectModule, new()
 	{
@@ -32,6 +32,9 @@ namespace HelloWorld.Domain
 			GetDomainConfiguration().Start();
 			Trace.TraceInformation("Setting service point configurations...");
 			new ServicePointManagerConfiguration().Start();
+
+			Trace.TraceInformation("Data contracts configuring...");
+			new Akka.Services.Host.HelloWorldExampleServiceHost().RegisterDataContracts();
 
 			Trace.TraceInformation("Data contracts configured.");
 		}

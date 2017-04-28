@@ -39,6 +39,11 @@ namespace HelloWorld.Domain.Host.Web.Configuration
 		/// </summary>
 		protected virtual void RegisterLogger()
 		{
+
+			Bind<ITelemetryHelper>()
+				.To<NullTelemetryHelper>()
+				.InSingletonScope();
+
 		}
 
 		/// <summary>

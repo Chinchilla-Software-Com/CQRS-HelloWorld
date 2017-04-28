@@ -1,0 +1,65 @@
+﻿@{
+	ViewBag.Title = "Akka :: HelloWorldExample";
+}
+<h2>@ViewBag.Title.</h2>
+
+<table width="100%">
+	<tr valign="top">
+		<td style="position: relative">
+			<form id="Akka_HelloWorldExample_CreateProvider">
+				<table>
+					<tr style="display: none;">
+						<th>Rsn</th>
+						<td><input type="hidden" name="Rsn" id="Akka_HelloWorldExample_CreateProvider__Rsn" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align: right">
+							<input type="button" value="Discard" onclick="executeDiscard();" id="Akka_HelloWorldExample_CreateProvider_Button_Cancel" />
+						</td>
+					</tr>
+				</table>
+			</form>
+			<div id="Akka_HelloWorldExample_CreateProvider_Block" style="width: 100%; height: 100%; background-color: black; opacity: 0.5; position: absolute ;top: 0px; left: 0px;"></div>
+			<script language="javascript" type="text/javascript">
+				var loadItem = function (rsn) {
+					document.getElementById("Akka_HelloWorldExample_CreateProvider__Rsn").value = rsn;
+
+					$("#Akka_HelloWorldExample_CreateProvider_Block").hide();
+
+				};
+				var executeCreate = function () {
+					$("#Akka_HelloWorldExample_CreateProvider_Block").show();
+					var formData = window.getFormData($("#Akka_HelloWorldExample_CreateProvider"));
+					window.api.HelloWorldExample.Create(formData, function (event, textStatus, jqXhr) {
+						document.getElementById("Akka_HelloWorldExample_CreateProvider__Rsn").value = "";
+						loadGet();
+						$("#Akka_HelloWorldExample_CreateProvider_Block").hide();
+					});
+				};
+				var executeUpdate = function () {
+					$("#Akka_HelloWorldExample_CreateProvider_Block").show();
+					var formData = window.getFormData($("#Akka_HelloWorldExample_CreateProvider"));
+					window.api.HelloWorldExample.Update(formData, function (event, textStatus, jqXhr) {
+						document.getElementById("Akka_HelloWorldExample_CreateProvider__Rsn").value = "";
+						loadGet();
+						$("#Akka_HelloWorldExample_CreateProvider_Block").hide();
+					});
+				};
+				var executeDelete = function () {
+					$("#Akka_HelloWorldExample_CreateProvider_Block").show();
+					var formData = window.getFormData($("#Akka_HelloWorldExample_CreateProvider"));
+					window.api.HelloWorldExample.Delete(formData, function (event, textStatus, jqXhr) {
+						document.getElementById("Akka_HelloWorldExample_CreateProvider__Rsn").value = "";
+						loadGet();
+						$("#Akka_HelloWorldExample_CreateProvider_Block").hide();
+					});
+				};
+				var executeDiscard = function () {
+					document.getElementById("Akka_HelloWorldExample_CreateProvider__Rsn").value = "";
+
+				};
+				$("#Akka_HelloWorldExample_CreateProvider_Block").hide();
+			</script>
+		</td>
+	</tr>
+</table>

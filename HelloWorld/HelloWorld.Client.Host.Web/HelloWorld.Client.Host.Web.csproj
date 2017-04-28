@@ -171,10 +171,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HelloWorld\Domain\Controllers\AkkaController.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Controllers\BuiltInController.generated.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="HelloWorld\Domain\Akka\Services\Views\HelloWorldExampleService.cshtml" />
     <None Include="Properties\PublishProfiles\HelloWorld.pubxml" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

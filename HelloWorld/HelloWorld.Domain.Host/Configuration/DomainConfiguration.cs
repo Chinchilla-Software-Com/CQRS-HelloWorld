@@ -10,6 +10,7 @@ using Cqrs.Authentication;
 using Cqrs.Ninject.Configuration;
 using Cqrs.Ninject.InProcess.CommandBus.Configuration;
 using Cqrs.Ninject.InProcess.EventBus.Configuration;
+using HelloWorld.Domain.Configuration;
 using Ninject.Modules;
 
 namespace HelloWorld.Domain.Host.Configuration

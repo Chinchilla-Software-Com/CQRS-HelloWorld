@@ -83,6 +83,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelloWorld\Domain\Akka\Services\ServiceHost\Ninject\ServiceChannelFactories\HttpHelloWorldExampleAggregateServiceChannelFactory.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\ServiceHost\Ninject\ServiceChannelFactories\HttpHelloWorldExampleServiceServiceChannelFactory.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Services\ServiceHost\Ninject\ServiceHostFactories\HelloWorldExampleAggregateServiceHostFactory.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

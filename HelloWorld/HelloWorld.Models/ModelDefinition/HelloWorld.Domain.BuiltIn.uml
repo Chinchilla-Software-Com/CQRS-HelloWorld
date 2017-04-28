@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
   dslVersion="1.0.0.0"
   Id="8c530b33-7405-463c-9ccb-955c30e3d3b6"
   name="BuiltIn" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -8,6 +8,31 @@
       Id="bd86db40-d4be-4a7d-bf75-b696c8d032f0"
       name="Module"
       profile="CqrsProfile" />
+    <stereotypeInstance
+      Id="aab2431b-6ed4-48f2-86ad-f3e1899493a7"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c44b3839-dcd7-48a0-a9e3-00b66722c4ba">
+          <propertyInstance
+            Id="b4fe6719-3982-4299-aae7-8fe607e16da8"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a2ffca26-8776-42c4-88c8-ac1a20cc3b05">
+          <propertyInstance
+            Id="a0679ad9-8d6d-435d-ad68-34b99e8c1163"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="f3a7c8b0-292f-4f33-b160-2f8ff2d5b1c4">
+          <propertyInstance
+            Id="a06450d3-fe8e-45e5-9385-f633f37c5110"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
   </appliedStereotypesInternal>
   <packagedElements>
     <packageHasNamedElement>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3399d334-0000-0000-0100-000000000000" name="HelloWorldExample" linkedPackageId="3399d334-0000-0000-0200-000000000000" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3399d334-0000-0001-0100-000000000000" name="HelloWorldExample" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="3399d334-0000-0002-0100-000000000000" name="AggregateRoot" profile="CqrsProfile">
+            <elementDefinition Id="5d72cb71-e641-4f43-bc60-2682d6c0c613" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000000">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000000" name="BuildCreateCommand" value="false">
+                  <elementDefinition Id="70635dc9-3a02-4b63-a744-c664192ed41e" />
+                </propertyInstance>
+                <elementDefinition Id="cfb6a0b9-f040-475e-9c41-056b84e33477" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000001">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000001" name="BuildUpdateCommand" value="false">
+                  <elementDefinition Id="d0278f0d-eaca-4cd1-a2be-45509bf4b1b1" />
+                </propertyInstance>
+                <elementDefinition Id="4b644408-8bbd-4d08-95c4-1c3472df21c3" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000002">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000002" name="BuildDeleteCommand" value="false">
+                  <elementDefinition Id="9e2583a2-aab0-4212-9ab2-f75c78b2b2fd" />
+                </propertyInstance>
+                <elementDefinition Id="cb50395d-37f4-4c9d-8943-aa99b32d17e9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000003">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000003" name="BuildCreateServiceMethod" value="false">
+                  <elementDefinition Id="2cc88f5d-f4ab-4876-9983-777c8b9bc401" />
+                </propertyInstance>
+                <elementDefinition Id="67f14413-380e-4b03-995d-c5079361c38b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000004">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000004" name="BuildUpdateServiceMethod" value="false">
+                  <elementDefinition Id="d3794a11-43e2-4129-a7e8-ba2bce07774d" />
+                </propertyInstance>
+                <elementDefinition Id="5e16e8d4-105e-4bda-b73a-de19de670025" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000005">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000005" name="BuildDeleteServiceMethod" value="false">
+                  <elementDefinition Id="5dd07c71-a526-4e13-9baf-13df80cd5021" />
+                </propertyInstance>
+                <elementDefinition Id="203dbdf5-84f6-480b-bc1f-669a5525f2b3" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000006">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000006" name="BuildCreateControllerMethod" value="false">
+                  <elementDefinition Id="cca2403f-7f8a-407f-b02f-87cb8ec109ef" />
+                </propertyInstance>
+                <elementDefinition Id="770de31c-a653-46df-820c-bb5b649a03db" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000007">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000007" name="BuildUpdateControllerMethod" value="false">
+                  <elementDefinition Id="c01aab91-7f3d-4ac5-820e-60911cf87521" />
+                </propertyInstance>
+                <elementDefinition Id="cdf94758-a73b-4b7c-aab7-39bf3d7504b1" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000008">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000008" name="BuildDeleteControllerMethod" value="false">
+                  <elementDefinition Id="36d2d487-96e3-4e95-aaf5-5d16042adbce" />
+                </propertyInstance>
+                <elementDefinition Id="f3c952ce-9b10-489c-b2c3-8e60618e645b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-000000000009">
+                <propertyInstance Id="3399d334-0000-0003-0200-000000000009" name="BuildRepository" value="true">
+                  <elementDefinition Id="af041cef-1e49-4c35-8fbb-fdb5f95704c1" />
+                </propertyInstance>
+                <elementDefinition Id="1e98a1d4-1965-47d7-bc80-70102e186d91" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-00000000000a">
+                <propertyInstance Id="3399d334-0000-0003-0200-00000000000a" name="BuildService" value="true">
+                  <elementDefinition Id="8b8b0e80-ef94-41c2-9ca1-81246cdeae6f" />
+                </propertyInstance>
+                <elementDefinition Id="c75ab04c-fc8a-4912-89aa-5058a373e18d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-00000000000b">
+                <propertyInstance Id="3399d334-0000-0003-0200-00000000000b" name="BuildDataStore" value="true">
+                  <elementDefinition Id="54b7bc55-5319-44b4-92e2-47473543c14d" />
+                </propertyInstance>
+                <elementDefinition Id="d6d487d9-fff5-435b-9f57-e068d2ea7975" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-00000000000c">
+                <propertyInstance Id="3399d334-0000-0003-0200-00000000000c" name="IsSnapshotable" value="false">
+                  <elementDefinition Id="ff37221a-8391-4ca2-a5a8-22405d498837" />
+                </propertyInstance>
+                <elementDefinition Id="47b2b83a-2fcc-41d6-8dc8-4f207c6afcff" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-00000000000d">
+                <propertyInstance Id="3399d334-0000-0003-0200-00000000000d" name="AutoGenerateAllProperties" value="true">
+                  <elementDefinition Id="fa2715c3-76b6-4633-bfa3-a40d184a450f" />
+                </propertyInstance>
+                <elementDefinition Id="59974367-a8eb-4925-89f6-17695dac3ec6" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0000-0003-0100-00000000000e">
+                <propertyInstance Id="3399d334-0000-0003-0200-00000000000e" name="AggregateTechnology" value="Akka">
+                  <elementDefinition Id="2c712070-7892-4ce0-9e10-cba635163e7a" />
+                </propertyInstance>
+                <elementDefinition Id="dc605fae-ef89-4381-a9e7-23847a9cb467" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+          <stereotypeInstance Id="3399d334-0001-0002-0100-000000000000" name="class" profile="CSharpProfile">
+            <elementDefinition Id="56f2bdd0-4f86-4556-bb5b-4b9b66204460" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0001-0003-0100-000000000000">
+                <propertyInstance Id="3399d334-0001-0003-0200-000000000000" name="ClrAttributes" value="">
+                  <elementDefinition Id="f0ec9dd1-d6cc-4e35-8e49-34aa136cf20a" />
+                </propertyInstance>
+                <elementDefinition Id="84721df9-6e74-4b1a-b0d8-1a880eab33f8" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0001-0003-0100-000000000001">
+                <propertyInstance Id="3399d334-0001-0003-0200-000000000001" name="IsPartial" value="false">
+                  <elementDefinition Id="5b633baa-ff4b-46e8-a4ad-7600656e5805" />
+                </propertyInstance>
+                <elementDefinition Id="70140211-51a5-4cd5-9431-6d0056ccb600" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0001-0003-0100-000000000002">
+                <propertyInstance Id="3399d334-0001-0003-0200-000000000002" name="IsStatic" value="false">
+                  <elementDefinition Id="82ce8324-7c7d-4da8-9dbd-1857fe4d6bf9" />
+                </propertyInstance>
+                <elementDefinition Id="7e115328-634c-4d00-b7af-e2723f3fa896" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0001-0003-0100-000000000003">
+                <propertyInstance Id="3399d334-0001-0003-0200-000000000003" name="IsUnsafe" value="false">
+                  <elementDefinition Id="b7033a3d-97b8-4f57-ba33-8e5b2d888511" />
+                </propertyInstance>
+                <elementDefinition Id="abc97627-5d9f-49b1-9761-f5af5745876f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3399d334-0001-0003-0100-000000000004">
+                <propertyInstance Id="3399d334-0001-0003-0200-000000000004" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="93c25e9e-23cf-4a8c-ad12-f7854a3a0e00" />
+                </propertyInstance>
+                <elementDefinition Id="5caaa73f-655f-4d41-8cb8-21c74357efe8" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="b09b8e49-1f7f-466c-94a2-6ec7d8b3e936" />
+        <ownedAttributesInternal>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+</logicalClassDesignerModel>

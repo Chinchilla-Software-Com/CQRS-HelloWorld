@@ -1,14 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
   dslVersion="1.0.0.0"
   Id="5e3aec0c-cf2f-4f22-8b2c-d40b4f271722"
   name="Queries" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="89b6c887-43ca-4067-9c0e-639c146dca3d"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="664692c9-0e2d-4466-a6f8-246ff4e63ad5">
+          <propertyInstance
+            Id="f5162cfc-cfb1-4e0c-afa9-0cddc197e586"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="1e08cecc-5ab3-4b1f-8134-19e5e49a473c">
+          <propertyInstance
+            Id="c8b6a7d5-9fc4-4000-96aa-6f3f68f72764"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="c100aa2d-474b-4a56-a744-8d3cc2d6f610">
+          <propertyInstance
+            Id="27b27bba-d7dd-4c72-a80d-9369d6d420e4"
+            name="Usings" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <packagedElements>
     <packageHasNamedElement>
       <packageMoniker
         Id="fc4ddcff-6ffd-40e4-a182-853b1c7ad6a5"
         LastKnownName="Strategies"
-        LastKnownLocation="Package7_1615.uml" />
+        LastKnownLocation="HelloWorld.Domain.Akka.Repositories.Queries.Strategies.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
