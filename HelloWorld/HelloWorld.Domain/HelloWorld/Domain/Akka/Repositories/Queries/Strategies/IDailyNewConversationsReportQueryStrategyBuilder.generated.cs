@@ -20,7 +20,7 @@ using Cqrs.Repositories.Queries;
 namespace HelloWorld.Domain.Akka.Repositories.Queries.Strategies
 {
 	[GeneratedCode("CQRS UML Code Generator", "1.601.932")]
-	public partial interface IDailyNewConversationsReportQueryStrategyBuilder : IQueryBuilder<DailyNewConversationsReportQueryStrategy, Entities.DailyNewConversationsReportEntity>
+	public partial interface IDailyNewConversationsReportQueryStrategyBuilder : IQueryBuilder<DailyNewConversationsReportQueryStrategy, Entities.DailyNewConversationsReport>
 	{
 	}
 }

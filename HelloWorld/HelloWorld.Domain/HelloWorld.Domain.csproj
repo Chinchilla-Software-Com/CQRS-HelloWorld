@@ -101,12 +101,12 @@
     <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\ConversationEndedEventHandler.generated.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldRepliedToEventHandler.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldRepliedToEventHandler.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldRepliedToToEndConversationEventToCommandHandler.generated.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldSaidEventHandler.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldSaidEventHandler.generated.cs" />
-    <Compile Include="HelloWorld\Domain\Akka\Events\HelloWorldRepliedToToEndConversationEventToCommandHandler.cs" />
-    <Compile Include="HelloWorld\Domain\Akka\Events\HelloWorldRepliedToToEndConversationEventToCommandHandler.generated.cs" />
-    <Compile Include="HelloWorld\Domain\Akka\Events\HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.cs" />
-    <Compile Include="HelloWorld\Domain\Akka\Events\HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldRepliedToToEndConversationEventToCommandHandler.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Events\Handlers\HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.cs" />
     <Compile Include="HelloWorld\Domain\Akka\HelloWorldExample.cs" />
     <Compile Include="HelloWorld\Domain\Akka\HelloWorldExample.generated.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Repositories\Queries\Strategies\DailyNewConversationsReportQueryStrategy.generated.cs" />

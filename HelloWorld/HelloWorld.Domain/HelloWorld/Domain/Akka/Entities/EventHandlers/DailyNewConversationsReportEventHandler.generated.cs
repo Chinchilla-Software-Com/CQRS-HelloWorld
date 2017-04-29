@@ -48,13 +48,13 @@ namespace HelloWorld.Domain.Akka.Entities.EventHandlers
 			string eventTypeName = @event.GetType().FullName;
 			OnHandle(@event);
 
-			var entities = new List<DailyNewConversationsReportEntity>();
+			var entities = new List<DailyNewConversationsReport>();
 
 			bool singleItemNotCollection = true;
 			OnPreGet(@event, ref singleItemNotCollection);
 			if (singleItemNotCollection)
 			{
-				DailyNewConversationsReportEntity entity = null;
+				DailyNewConversationsReport entity = null;
 				OnGetEntity(@event, ref entity);
 				if (entity == null)
 				{
@@ -77,14 +77,14 @@ namespace HelloWorld.Domain.Akka.Entities.EventHandlers
 			else
 			{
 				Logger.LogDebug(string.Format("Event type '{0}' with Rsn '{1:N}': Several entities will be loaded manually.", eventTypeName, @event.Rsn));
-				IEnumerable<DailyNewConversationsReportEntity> manualEntities = null;
+				IEnumerable<DailyNewConversationsReport> manualEntities = null;
 				OnGetEntities(@event, ref manualEntities);
 				if (manualEntities != null)
 					entities.AddRange(manualEntities);
 			}
 			for (int i = 0; i < entities.Count; i++)
 			{
-				DailyNewConversationsReportEntity entity = entities[i];
+				DailyNewConversationsReport entity = entities[i];
 
 				bool autoMap = true;
 				OnUpdateEntity(@event, ref entity, ref autoMap);
@@ -127,19 +127,19 @@ namespace HelloWorld.Domain.Akka.Entities.EventHandlers
 
 		partial void GetSingleEntityRsn(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref Guid? rsn, ref bool throwExceptionOnMissingEntity);
 
-		partial void OnGetEntities(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref IEnumerable<DailyNewConversationsReportEntity> manualEntities);
+		partial void OnGetEntities(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref IEnumerable<DailyNewConversationsReport> manualEntities);
 
-		partial void OnGetEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReportEntity entity);
+		partial void OnGetEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReport entity);
 
-		partial void OnGotEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReportEntity entity);
+		partial void OnGotEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReport entity);
 
-		partial void OnUpdateEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReportEntity entity, ref bool autoMap);
+		partial void OnUpdateEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReport entity, ref bool autoMap);
 
-		partial void OnEntityUpdated(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReportEntity entity);
+		partial void OnEntityUpdated(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReport entity);
 
-		partial void OnSaveEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReportEntity entity, ref bool continueWithRepositorySave, ref bool createDontUpdate);
+		partial void OnSaveEntity(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReport entity, ref bool continueWithRepositorySave, ref bool createDontUpdate);
 
-		partial void OnEntitySaved(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReportEntity entity);
+		partial void OnEntitySaved(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event, ref DailyNewConversationsReport entity);
 
 		partial void OnHandled(HelloWorld.Domain.Akka.Events.HelloWorldSaid @event);
 

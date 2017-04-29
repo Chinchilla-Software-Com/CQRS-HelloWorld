@@ -27,7 +27,7 @@ using HelloWorld.Domain.Akka.Repositories.Queries.Strategies;
 namespace HelloWorld.Domain.Akka.Entities.Repositories
 {
 	[GeneratedCode("CQRS UML Code Generator", "1.601.932")]
-	public partial class DailyNewConversationsReportRepository : Repository<DailyNewConversationsReportQueryStrategy, DailyNewConversationsReportQueryStrategyBuilder, Entities.DailyNewConversationsReportEntity>, IDailyNewConversationsReportRepository
+	public partial class DailyNewConversationsReportRepository : Repository<DailyNewConversationsReportQueryStrategy, DailyNewConversationsReportQueryStrategyBuilder, Entities.DailyNewConversationsReport>, IDailyNewConversationsReportRepository
 	{
 		public DailyNewConversationsReportRepository(IDomainDataStoreFactory dataStoreFactory, DailyNewConversationsReportQueryStrategyBuilder dailyNewConversationsReportQueryBuilder)
 			: base(dataStoreFactory.GetDailyNewConversationsReportDataStore, dailyNewConversationsReportQueryBuilder)

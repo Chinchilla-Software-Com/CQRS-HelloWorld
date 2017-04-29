@@ -33,7 +33,7 @@ namespace HelloWorld.Domain.Akka.Entities
 	[DataContract]
 	[Table(Name = "DailyNewConversationsReportEntity")]
 	[ServiceContract(Namespace="https://getcqrs.net/Domain/Akka/Entities/1001/")]
-	public  partial class DailyNewConversationsReportEntity : Entity, IDailyNewConversationsReportEntity
+	public  partial class DailyNewConversationsReport : Entity, IDailyNewConversationsReport
 	{
 		[DataMember]
 		[Column(IsPrimaryKey = true)]

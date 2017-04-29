@@ -23,7 +23,7 @@ namespace HelloWorld.Domain.Factories
 	/// </summary>
 	public partial interface IDomainDataStoreFactory
 	{
-		IDataStore<Akka.Entities.DailyNewConversationsReportEntity> GetDailyNewConversationsReportDataStore();
+		IDataStore<Akka.Entities.DailyNewConversationsReport> GetDailyNewConversationsReportDataStore();
 
 	}
 }

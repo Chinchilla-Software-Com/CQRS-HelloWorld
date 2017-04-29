@@ -503,6 +503,16 @@
             </summary>
       <param name="documentPath">The physical path to XML document.</param>
     </member>
+    <member name="T:HelloWorld.Domain.Host.Web.Configuration.HostPostHacksModule">
+      <summary>
+            The <see cref="T:Ninject.Modules.INinjectModule" /> for use with the domain package.
+            </summary>
+    </member>
+    <member name="T:HelloWorld.Domain.Host.Web.Configuration.HostPreHacksModule">
+      <summary>
+            The <see cref="T:Ninject.Modules.INinjectModule" /> for use with the domain package.
+            </summary>
+    </member>
     <member name="T:HelloWorld.Domain.Host.Web.Configuration.WebHostModule">
       <summary>
             The <see cref="T:Ninject.Modules.INinjectModule" /> for use with the domain package.

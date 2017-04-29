@@ -37,9 +37,9 @@ namespace HelloWorld.Domain.Factories
 
 		#region Implementation of IDomainDataStoreFactory
 
-		public virtual IDataStore<Akka.Entities.DailyNewConversationsReportEntity> GetDailyNewConversationsReportDataStore()
+		public virtual IDataStore<Akka.Entities.DailyNewConversationsReport> GetDailyNewConversationsReportDataStore()
 		{
-			IDataStore<Akka.Entities.DailyNewConversationsReportEntity> result = new SqlDataStore<Akka.Entities.DailyNewConversationsReportEntity>(ConfigurationManager, Logger);
+			IDataStore<Akka.Entities.DailyNewConversationsReport> result = new SqlDataStore<Akka.Entities.DailyNewConversationsReport>(ConfigurationManager, Logger);
 			OnGetDailyNewConversationsReportDataStore(ref result);
 			return result;
 		}
@@ -47,7 +47,7 @@ namespace HelloWorld.Domain.Factories
 
 		#endregion
 
-		partial void OnGetDailyNewConversationsReportDataStore(ref IDataStore<Akka.Entities.DailyNewConversationsReportEntity> result);
+		partial void OnGetDailyNewConversationsReportDataStore(ref IDataStore<Akka.Entities.DailyNewConversationsReport> result);
 
 	}
 }

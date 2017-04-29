@@ -28,21 +28,21 @@ using HelloWorld.Domain.Factories;
 namespace HelloWorld.Domain.Akka.Repositories.Queries.Strategies
 {
 	[GeneratedCode("CQRS UML Code Generator", "1.601.932")]
-	public partial class DailyNewConversationsReportQueryStrategyBuilder : QueryBuilder<DailyNewConversationsReportQueryStrategy, Entities.DailyNewConversationsReportEntity>, IDailyNewConversationsReportQueryStrategyBuilder
+	public partial class DailyNewConversationsReportQueryStrategyBuilder : QueryBuilder<DailyNewConversationsReportQueryStrategy, Entities.DailyNewConversationsReport>, IDailyNewConversationsReportQueryStrategyBuilder
 	{
 		public DailyNewConversationsReportQueryStrategyBuilder(IDomainDataStoreFactory dataStoreFactory, IDependencyResolver dependencyResolver)
 			: base(dataStoreFactory.GetDailyNewConversationsReportDataStore(), dependencyResolver)
 		{
 		}
 
-		#region Overrides of QueryBuilder<DailyNewConversationsReportQueryStrategy,Entities.DailyNewConversationsReportEntity>
+		#region Overrides of QueryBuilder<DailyNewConversationsReportQueryStrategy,Entities.DailyNewConversationsReport>
 
-		protected override IQueryable<Entities.DailyNewConversationsReportEntity> GeneratePredicate(QueryPredicate queryPredicate, IQueryable<Entities.DailyNewConversationsReportEntity> leftHandQueryable = null)
+		protected override IQueryable<Entities.DailyNewConversationsReport> GeneratePredicate(QueryPredicate queryPredicate, IQueryable<Entities.DailyNewConversationsReport> leftHandQueryable = null)
 		{
 			DailyNewConversationsReportQueryStrategy queryStrategy = GetNullQueryStrategy();
 			SortedSet<QueryParameter> parameters = queryPredicate.Parameters;
 
-			IQueryable<Entities.DailyNewConversationsReportEntity> resultingQueryable = null;
+			IQueryable<Entities.DailyNewConversationsReport> resultingQueryable = null;
 
 			resultingQueryable
 				= GeneratePredicateWithPermissionScopeAny<Cqrs.Authentication.SingleSignOnToken>(queryPredicate, leftHandQueryable)
@@ -58,9 +58,9 @@ namespace HelloWorld.Domain.Akka.Repositories.Queries.Strategies
 
 		#endregion
 
-		protected override void ApplySorting(DailyNewConversationsReportQueryStrategy queryStrategy, ref IQueryable<Entities.DailyNewConversationsReportEntity> queryable)
+		protected override void ApplySorting(DailyNewConversationsReportQueryStrategy queryStrategy, ref IQueryable<Entities.DailyNewConversationsReport> queryable)
 		{
-			var orderQueryable = (IOrderedQueryable<Entities.DailyNewConversationsReportEntity>)queryable;
+			var orderQueryable = (IOrderedQueryable<Entities.DailyNewConversationsReport>)queryable;
 
 			int index = 0;
 			foreach (Func<int, DailyNewConversationsReportQueryStrategy> sortingMethod in queryStrategy.SortingList)

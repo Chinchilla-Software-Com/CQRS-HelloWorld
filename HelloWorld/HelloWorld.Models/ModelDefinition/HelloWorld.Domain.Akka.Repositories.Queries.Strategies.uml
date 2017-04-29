@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="fc4ddcff-6ffd-40e4-a182-853b1c7ad6a5"
   name="Strategies" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -55,7 +55,7 @@
                 <propertyInstance
                   Id="334f0085-1fbc-4dcc-aea2-aa9d8a8eab4e"
                   name="EntityName"
-                  value="DailyNewConversationsReportEntity" />
+                  value="DailyNewConversationsReport" />
               </stereotypeInstanceHasPropertyInstances>
             </propertyInstances>
           </stereotypeInstance>
@@ -95,78 +95,6 @@
                 Id="3b5efcf0-255b-482c-a81e-870ddb4b20cd">
                 <propertyInstance
                   Id="59d45d3d-7bec-407a-9fc2-57b3244ab90c"
-                  name="PackageVisibility"
-                  value="internal" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-        </appliedStereotypesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="ca83cee7-d6d9-4225-8ce5-bcd7707f5034"
-        name="HelloWorldExampleQueryStrategy"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <appliedStereotypesInternal>
-          <stereotypeInstance
-            Id="9cac6bc2-2c7a-4aae-8662-6236a84501e0"
-            name="QueryStrategy"
-            profile="CqrsProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="ed9b87cf-1e8e-48b1-b118-be0f7935a3b7">
-                <propertyInstance
-                  Id="5e03c981-0512-4edc-9ff4-f52ed1d7ad34"
-                  name="AggregateRootName" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="889da99d-57c6-4203-b828-444917b536aa">
-                <propertyInstance
-                  Id="ee1a2834-b671-4109-852d-833c91399e78"
-                  name="EntityName"
-                  value="HelloWorldExampleEntity" />
-              </stereotypeInstanceHasPropertyInstances>
-            </propertyInstances>
-          </stereotypeInstance>
-          <stereotypeInstance
-            Id="30a3e431-c41f-4343-a646-3937f0ee67ef"
-            name="class"
-            profile="CSharpProfile">
-            <propertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="b06da6e3-28cd-4b41-93a5-8109b88f9dde">
-                <propertyInstance
-                  Id="5fc8ec22-1e5a-43b2-836e-2fdf4e5c400e"
-                  name="ClrAttributes" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="4adfad23-72c0-4791-add6-b45cc33a5190">
-                <propertyInstance
-                  Id="01eb095f-3754-407a-97d5-902cde278efd"
-                  name="IsPartial"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="43fd63ec-4732-425d-9eb0-a2d797cd0969">
-                <propertyInstance
-                  Id="ae1bb65c-599e-49ab-b996-3fb1b0979637"
-                  name="IsStatic"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="285369cf-9547-4a75-a682-9acbd5df1a27">
-                <propertyInstance
-                  Id="ddd47044-8c93-4768-b501-19080c9b1a45"
-                  name="IsUnsafe"
-                  value="false" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="0a4d8cdd-8fb3-42a2-91af-eb5f63e93c45">
-                <propertyInstance
-                  Id="9171a541-5840-4aeb-a5aa-e725310f12ed"
                   name="PackageVisibility"
                   value="internal" />
               </stereotypeInstanceHasPropertyInstances>

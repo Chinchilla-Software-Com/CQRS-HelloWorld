@@ -25,7 +25,7 @@ using Cqrs.Entities;
 namespace HelloWorld.Domain.Akka.Entities
 {
 	[GeneratedCode("CQRS UML Code Generator", "1.601.932")]
-	public  partial interface IDailyNewConversationsReportEntity : IEntity
+	public  partial interface IDailyNewConversationsReport : IEntity
 	{
 		[DataMember]
 		int Number { get; set; }
