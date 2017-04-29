@@ -86,6 +86,7 @@ namespace HelloWorld.Domain.Configuration
 				.InThreadScope();
 
 
+			// HelloWorldExampleService does not need a binding
 
 			OnServicesRegistered();
 		}

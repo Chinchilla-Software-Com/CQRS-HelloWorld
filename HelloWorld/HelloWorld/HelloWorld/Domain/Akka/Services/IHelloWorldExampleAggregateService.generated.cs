@@ -46,9 +46,6 @@ namespace HelloWorld.Domain.Akka.Services
 	public partial class HelloWorldExampleSayHelloWorldParameters
 	{
 		[DataMember]
-		public System.Guid Rsn { get; set; }
-
-		[DataMember]
 		public string FirstName { get; set; }
 
 	}

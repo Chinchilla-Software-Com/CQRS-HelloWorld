@@ -98,7 +98,7 @@ namespace HelloWorld.Domain.Akka.Controllers
 			UnitOfWorkService.SetCommitter(this);
 			HelloWorldExampleSayHelloWorldParameters item = serviceRequest.Data;
 
-			var command = new SayHelloWorldCommand(rsn: item.Rsn, firstName: item.FirstName);
+			var command = new SayHelloWorldCommand(rsn: Guid.NewGuid(), firstName: item.FirstName);
 			ServiceResponseStateType? serviceResponseStateType = null;
 			Logger.LogDebug("Pre", "HelloWorldExample/SayHelloWorld/OnSayHelloWorld");
 			OnSayHelloWorld(serviceRequest, ref command, ref serviceResponseStateType);

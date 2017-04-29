@@ -42,7 +42,7 @@
           <propertyInstance
             Id="ff758e85-3876-4703-b0e0-99a363df8946"
             name="AggregateTechnology"
-            value="BuiltIn" />
+            value="Akka" />
         </stereotypeInstanceHasPropertyInstances>
         <stereotypeInstanceHasPropertyInstances
           Id="f324d24f-5aad-4b03-8174-1c04cb140002">

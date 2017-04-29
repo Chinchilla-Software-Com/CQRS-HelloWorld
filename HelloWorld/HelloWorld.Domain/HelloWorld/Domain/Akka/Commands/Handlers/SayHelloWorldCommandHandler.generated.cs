@@ -61,6 +61,7 @@ namespace HelloWorld.Domain.Akka.Commands.Handlers
 			if (continueExecution)
 			{
 				Guid rsn = command.Rsn;
+				rsn = Guid.NewGuid();
 				global::Akka.Actor.IActorRef item = AggregateResolver.ResolveActor<HelloWorldExample, Cqrs.Authentication.SingleSignOnToken>(rsn);
 				// bool result = global::Akka.Actor.Futures.Ask<bool>(item, command).Result;
 				global::Akka.Actor.ActorRefImplicitSenderExtensions.Tell(item, command);

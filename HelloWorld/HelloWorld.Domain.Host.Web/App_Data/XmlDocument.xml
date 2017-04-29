@@ -2068,6 +2068,46 @@
             The Rsn of the <see cref="T:Cqrs.Domain.IAggregateRoot`1">aggregate</see> being targeted.
             </summary>
     </member>
+    <member name="T:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldRepliedToToEndConversationEventToCommandHandler">
+      <summary>
+            Converts <see cref="T:HelloWorld.Domain.Akka.Events.HelloWorldRepliedTo" /> to a <see cref="T:HelloWorld.Domain.Akka.Commands.EndConversationCommand" /> and publish it using <see cref="!:CommandBus" /></summary>
+      <summary>
+            Converts <see cref="T:HelloWorld.Domain.Akka.Events.HelloWorldRepliedTo" /> to a <see cref="T:HelloWorld.Domain.Akka.Commands.EndConversationCommand" /> and publish it using <see cref="!:CommandBus" /></summary>
+    </member>
+    <member name="M:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldRepliedToToEndConversationEventToCommandHandler.#ctor(cdmdotnet.Logging.ILogger,cdmdotnet.AutoMapper.IAutomapHelper)">
+      <summary>
+            Instantiates the <see cref="T:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldRepliedToToEndConversationEventToCommandHandler" /> class.
+            </summary>
+    </member>
+    <member name="M:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldRepliedToToEndConversationEventToCommandHandler.#ctor(Cqrs.Akka.Domain.IAkkaAggregateResolver,cdmdotnet.Logging.ILogger,cdmdotnet.AutoMapper.IAutomapHelper)">
+      <summary>
+            Instantiates the <see cref="T:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldRepliedToToEndConversationEventToCommandHandler" /> class registering any <see cref="M:Akka.Actor.ReceiveActor.Receive``1(System.Func{``0,System.Threading.Tasks.Task})" /> required.
+            </summary>
+    </member>
+    <member name="M:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldRepliedToToEndConversationEventToCommandHandler.Actor.Handle(HelloWorld.Domain.Akka.Events.HelloWorldRepliedTo)">
+      <summary>
+            Convert the provided <paramref name="@event" /> to a <see cref="T:HelloWorld.Domain.Akka.Commands.EndConversationCommand" /> and publish it using <see cref="P:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldRepliedToToEndConversationEventToCommandHandler.Actor.CommandBus" /></summary>
+    </member>
+    <member name="T:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler">
+      <summary>
+            Converts <see cref="T:HelloWorld.Domain.Akka.Events.HelloWorldSaid" /> to a <see cref="T:HelloWorld.Domain.Akka.Commands.ReplyToHelloWorldCommand" /> and publish it using <see cref="P:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.CommandBus" /></summary>
+      <summary>
+            Converts <see cref="T:HelloWorld.Domain.Akka.Events.HelloWorldSaid" /> to a <see cref="T:HelloWorld.Domain.Akka.Commands.ReplyToHelloWorldCommand" /> and publish it using <see cref="P:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.CommandBus" /></summary>
+    </member>
+    <member name="M:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.#ctor(cdmdotnet.Logging.ILogger,cdmdotnet.AutoMapper.IAutomapHelper)">
+      <summary>
+            Instantiates the <see cref="T:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler" /> class.
+            </summary>
+    </member>
+    <member name="M:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.#ctor(Cqrs.Akka.Commands.IAkkaCommandSender{Cqrs.Authentication.SingleSignOnToken},cdmdotnet.Logging.ILogger,cdmdotnet.AutoMapper.IAutomapHelper)">
+      <summary>
+            Instantiates the <see cref="T:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler" /> class.
+            </summary>
+    </member>
+    <member name="M:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.Handle(HelloWorld.Domain.Akka.Events.HelloWorldSaid)">
+      <summary>
+            Convert the provided <paramref name="@event" /> to a <see cref="T:HelloWorld.Domain.Akka.Commands.ReplyToHelloWorldCommand" /> and publish it using <see cref="P:HelloWorld.Domain.Akka.Events.Handlers.HelloWorldSaidToReplyToHelloWorldEventToCommandHandler.CommandBus" /></summary>
+    </member>
     <member name="M:HelloWorld.Domain.Akka.HelloWorldExample.#ctor">
       <summary>
             A constructor for the <see cref="T:Cqrs.Domain.Factories.IAggregateFactory" /></summary>

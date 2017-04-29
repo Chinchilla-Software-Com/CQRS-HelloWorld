@@ -24,3 +24,4 @@ ModelingTemplates/
 
 # Ignore the publish folder which is only used for package publishing... not storing
 /InsureIT/InsureIT.Models/CodeGeneration.Log.xml
+/HelloWorld/HelloWorld.Models/CodeGeneration.Log.xml
