@@ -24,8 +24,9 @@ using System.Text;
 using System;
 using System.Collections.Generic;
 using System.Web.Http;
-
+using System.Web.Mvc;
 using cdmdotnet.Logging;
+using Cqrs.Akka.Commands;
 using Cqrs.Authentication;
 using Cqrs.Commands;
 using Cqrs.Events;
@@ -53,12 +54,14 @@ namespace HelloWorld.Domain.Akka.Controllers
 	/// Then enable XML documentation for all projects for both DEBUG and RELEASE builds.
 	/// </remarks>
 	[GeneratedCode("CQRS UML Code Generator", "1.601.932")]
-	[RoutePrefix("Akka/HelloWorldExample")]
+	[System.Web.Http.RoutePrefix("Akka/HelloWorldExample")]
 	public  partial class HelloWorldExampleController
 		: CqrsEventApiController<Cqrs.Authentication.SingleSignOnToken>
 		, IHelloWorldExampleService
 	{
 		protected ICommandPublisher<Cqrs.Authentication.SingleSignOnToken> CommandPublisher { get; private set; }
+
+		protected IAkkaCommandSenderProxy<Cqrs.Authentication.SingleSignOnToken> AkkaCommandSender { get; private set; }
 
 		protected IUnitOfWorkService UnitOfWorkService { get; private set;}
 
@@ -67,18 +70,19 @@ namespace HelloWorld.Domain.Akka.Controllers
 		/// <summary>
 		/// Instantiate a new instance of the <see cref="HelloWorldExampleController"/> class
 		/// </summary>
-		public HelloWorldExampleController(ILogger logger, ICorrelationIdHelper correlationIdHelper, IAuthenticationTokenHelper<Cqrs.Authentication.SingleSignOnToken> authenticationTokenHelper, IEventStore<Cqrs.Authentication.SingleSignOnToken> eventStore, ICommandPublisher<Cqrs.Authentication.SingleSignOnToken> commandPublisher, IUnitOfWorkService unitOfWorkService, IQueryFactory queryFactory)
+		public HelloWorldExampleController(ILogger logger, ICorrelationIdHelper correlationIdHelper, IAuthenticationTokenHelper<Cqrs.Authentication.SingleSignOnToken> authenticationTokenHelper, IEventStore<Cqrs.Authentication.SingleSignOnToken> eventStore, ICommandPublisher<Cqrs.Authentication.SingleSignOnToken> commandPublisher, IAkkaCommandSenderProxy<Cqrs.Authentication.SingleSignOnToken> akkaCommandSender, IUnitOfWorkService unitOfWorkService, IQueryFactory queryFactory)
 			: base(logger, correlationIdHelper, authenticationTokenHelper, eventStore)
 		{
 			CommandPublisher = commandPublisher;
+			AkkaCommandSender = akkaCommandSender;
 			UnitOfWorkService = unitOfWorkService;
 			QueryFactory = queryFactory;
 		}
 
 		#region SayHelloWorld
 
-		[Route("SayHelloWorld")]
-		[HttpPost]
+		[System.Web.Http.Route("SayHelloWorld")]
+		[System.Web.Http.HttpPost]
 		public virtual IServiceResponse SayHelloWorld([FromBody]HelloWorldExampleSayHelloWorldParameters parameters)
 		{
 			return SayHelloWorld(CreateRequestWithData<Cqrs.Authentication.SingleSignOnToken, HelloWorldExampleSayHelloWorldParameters>(() => parameters));
@@ -107,7 +111,7 @@ namespace HelloWorld.Domain.Akka.Controllers
 				return CompleteResponse(new ServiceResponse { State = serviceResponseStateType.Value });
 
 			Logger.LogDebug("Pre", "HelloWorldExample/SayHelloWorld/PublishCommand");
-			CommandPublisher.Publish(command);
+			AkkaCommandSender.Publish(command);
 			Logger.LogDebug("Post", "HelloWorldExample/SayHelloWorld/PublishCommand");
 			Logger.LogDebug("Pre", "HelloWorldExample/SayHelloWorld/OnSayHelloWorldHandled");
 			OnSayHelloWorldHandled(serviceRequest, ref command, ref serviceResponseStateType);
@@ -129,8 +133,8 @@ namespace HelloWorld.Domain.Akka.Controllers
 
 		#region ReplyToHelloWorld
 
-		[Route("ReplyToHelloWorld")]
-		[HttpPost]
+		[System.Web.Http.Route("ReplyToHelloWorld")]
+		[System.Web.Http.HttpPost]
 		public virtual IServiceResponse ReplyToHelloWorld([FromBody]HelloWorldExampleReplyToHelloWorldParameters parameters)
 		{
 			return ReplyToHelloWorld(CreateRequestWithData<Cqrs.Authentication.SingleSignOnToken, HelloWorldExampleReplyToHelloWorldParameters>(() => parameters));
@@ -181,8 +185,8 @@ namespace HelloWorld.Domain.Akka.Controllers
 
 		#region EndConversation
 
-		[Route("EndConversation")]
-		[HttpPost]
+		[System.Web.Http.Route("EndConversation")]
+		[System.Web.Http.HttpPost]
 		public virtual IServiceResponse EndConversation([FromBody]HelloWorldExampleEndConversationParameters parameters)
 		{
 			return EndConversation(CreateRequestWithData<Cqrs.Authentication.SingleSignOnToken, HelloWorldExampleEndConversationParameters>(() => parameters));
@@ -236,8 +240,8 @@ namespace HelloWorld.Domain.Akka.Controllers
 		/// </summary>
 		/// <param name="correlationId">The CorrelationId of the matching events.</param>
 		/// <returns>A <see cref="IServiceResponseWithResultData{TResultData}">service-response</see> with a collection of <see cref="EventData">event data</see></returns>
-		[Route("GetEventData/{correlationId:guid}")]
-		[HttpGet]
+		[System.Web.Http.Route("GetEventData/{correlationId:guid}")]
+		[System.Web.Http.HttpGet]
 		public virtual IServiceResponseWithResultData<IEnumerable<EventData>> GetEventData(Guid correlationId)
 		{
 			return GetEventData(CreateRequestWithData<Cqrs.Authentication.SingleSignOnToken, Guid>(() => correlationId));

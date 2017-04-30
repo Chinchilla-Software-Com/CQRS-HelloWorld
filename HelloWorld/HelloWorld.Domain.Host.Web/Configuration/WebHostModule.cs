@@ -8,11 +8,9 @@
 
 using System;
 using System.Web;
-using Akka.IO;
 using cdmdotnet.Logging;
 using Cqrs.Authentication;
 using Cqrs.Azure.ConfigurationManager;
-using Cqrs.Commands;
 using Cqrs.Configuration;
 using Cqrs.WebApi.SignalR.Hubs;
 using Ninject;

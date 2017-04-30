@@ -45,24 +45,24 @@
       <HintPath>..\..\packages\cdmdotnet.AutoMapper.1.0.16.9\lib\net40\cdmdotnet.AutoMapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="cdmdotnet.StateManagement, Version=3.0.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\cdmdotnet.StateManagement.3.0.9.7\lib\net40\cdmdotnet.StateManagement.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="cdmdotnet.Logging, Version=1.2.84.66, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\cdmdotnet.Logging.1.2.84.66\lib\net40\cdmdotnet.Logging.dll</HintPath>
+    <Reference Include="cdmdotnet.Logging, Version=1.2.87.68, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\cdmdotnet.Logging.1.2.87.68\lib\net40\cdmdotnet.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="cdmdotnet.Performance, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\cdmdotnet.Performance.1.0.5.8\lib\net40\cdmdotnet.Performance.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Cqrs, Version=1.601.1257.515, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cqrs.1.601.1257.515\lib\net40\Cqrs.dll</HintPath>
+    <Reference Include="cdmdotnet.StateManagement, Version=3.0.13.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\cdmdotnet.StateManagement.3.0.13.9\lib\net40\cdmdotnet.StateManagement.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Cqrs.Akka, Version=1.601.1257.515, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Cqrs.Akka.1.601.1257.515\lib\net45\Cqrs.Akka.dll</HintPath>
+    <Reference Include="Cqrs, Version=1.601.1289.544, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cqrs.1.601.1289.544\lib\net40\Cqrs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Cqrs.Akka, Version=1.601.1289.544, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Cqrs.Akka.1.601.1289.544\lib\net45\Cqrs.Akka.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -94,6 +94,7 @@
     <Compile Include="HelloWorld\Domain\Akka\Commands\Handlers\SayHelloWorldCommandHandler.generated.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Commands\ReplyToHelloWorld.generated.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Commands\SayHelloWorld.generated.cs" />
+    <Compile Include="HelloWorld\Domain\Akka\Entities\EventHandlers\DailyNewConversationsReportEventHandler.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Entities\EventHandlers\DailyNewConversationsReportEventHandler.generated.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Entities\Repositories\DailyNewConversationsReportRepository.generated.cs" />
     <Compile Include="HelloWorld\Domain\Akka\Entities\Repositories\IDailyNewConversationsReportRepository.generated.cs" />

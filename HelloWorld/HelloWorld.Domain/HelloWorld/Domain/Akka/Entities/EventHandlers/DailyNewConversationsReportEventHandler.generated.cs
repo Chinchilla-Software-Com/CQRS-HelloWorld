@@ -67,7 +67,7 @@ namespace HelloWorld.Domain.Akka.Entities.EventHandlers
 						Logger.LogDebug(string.Format("Event type '{0}' with Rsn '{1:N}': Rsn manually provided.", eventTypeName, @event.Rsn));
 					if (!throwExceptionOnMissingEntity)
 						Logger.LogDebug(string.Format("Event type '{0}' with Rsn '{1:N}': Can expect no value from the repository without an exception.", eventTypeName, @event.Rsn));
-					entity = DailyNewConversationsReportRepository.Load(rsn.Value, throwExceptionOnMissingEntity);
+					entity = DailyNewConversationsReportRepository.Load(rsn.Value, throwExceptionOnMissingEntity) ?? new DailyNewConversationsReport{ Rsn = rsn.Value };
 				}
 				else
 					Logger.LogDebug(string.Format("Event type '{0}' with Rsn '{1:N}': Entity manually provided.", eventTypeName, @event.Rsn));

@@ -548,7 +548,7 @@
             Then enable XML documentation for all projects for both DEBUG and RELEASE builds.
             </remarks>
     </member>
-    <member name="M:HelloWorld.Domain.Akka.Controllers.HelloWorldExampleController.#ctor(cdmdotnet.Logging.ILogger,cdmdotnet.Logging.ICorrelationIdHelper,Cqrs.Authentication.IAuthenticationTokenHelper{Cqrs.Authentication.SingleSignOnToken},Cqrs.Events.IEventStore{Cqrs.Authentication.SingleSignOnToken},Cqrs.Commands.ICommandPublisher{Cqrs.Authentication.SingleSignOnToken},Cqrs.Services.IUnitOfWorkService,Cqrs.Repositories.Queries.IQueryFactory)">
+    <member name="M:HelloWorld.Domain.Akka.Controllers.HelloWorldExampleController.#ctor(cdmdotnet.Logging.ILogger,cdmdotnet.Logging.ICorrelationIdHelper,Cqrs.Authentication.IAuthenticationTokenHelper{Cqrs.Authentication.SingleSignOnToken},Cqrs.Events.IEventStore{Cqrs.Authentication.SingleSignOnToken},Cqrs.Commands.ICommandPublisher{Cqrs.Authentication.SingleSignOnToken},Cqrs.Akka.Commands.IAkkaCommandSenderProxy{Cqrs.Authentication.SingleSignOnToken},Cqrs.Services.IUnitOfWorkService,Cqrs.Repositories.Queries.IQueryFactory)">
       <summary>
             Instantiate a new instance of the <see cref="T:HelloWorld.Domain.Akka.Controllers.HelloWorldExampleController" /> class
             </summary>
@@ -658,6 +658,11 @@
             Build a message handler that implements telemetry capturing as well as off thread handling.
             </summary>
     </member>
+    <member name="M:Cqrs.Bus.IBusHelper.BuildActionHandler``1(System.Action{``0},System.Boolean)">
+      <summary>
+            Build a message handler that implements telemetry capturing as well as off thread handling.
+            </summary>
+    </member>
     <member name="M:Cqrs.Bus.BusHelper.IsEventRequired(System.Type)">
       <summary>
             Checks if a white-list or black-list approach is taken, then checks the <see cref="T:Cqrs.Configuration.IConfigurationManager" /> to see if a key exists defining if the event is required or not.
@@ -675,6 +680,11 @@
       <param name="configurationKey">The configuration key to check.</param>
     </member>
     <member name="M:Cqrs.Bus.BusHelper.BuildTelemeteredActionHandler``2(cdmdotnet.Logging.ITelemetryHelper,System.Action{``0},System.Boolean,System.String)">
+      <summary>
+            Build a message handler that implements telemetry capturing as well as off thread handling.
+            </summary>
+    </member>
+    <member name="M:Cqrs.Bus.BusHelper.BuildActionHandler``1(System.Action{``0},System.Boolean)">
       <summary>
             Build a message handler that implements telemetry capturing as well as off thread handling.
             </summary>
@@ -917,6 +927,19 @@
       <summary>
             Validates the provided <param name="command" /> on its own merits.
             </summary>
+    </member>
+    <member name="M:Cqrs.Configuration.ITelemetryHelperExtensions.TrackRequest``1(cdmdotnet.Logging.ITelemetryHelper,System.String,``0,System.DateTimeOffset,System.TimeSpan,System.String,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.String})">
+      <summary>
+            Send information about a request handled by the application.
+            </summary>
+      <param name="telemetryHelper">The <see cref="T:cdmdotnet.Logging.ITelemetryHelper" /> being extended.s</param>
+      <param name="name">The request name.</param>
+      <param name="token">The token with user identifiable information.</param>
+      <param name="startTime">The time when the page was requested.</param>
+      <param name="duration">The time taken by the application to handle the request.</param>
+      <param name="responseCode">The response status code.</param>
+      <param name="wasSuccessfull">True if the request was handled successfully by the application.</param>
+      <param name="properties">Named string values you can use to search and classify events.</param>
     </member>
     <member name="T:Cqrs.DataStores.IDataStore`1">
       <summary>
@@ -1715,7 +1738,7 @@
             Triggers the <see cref="T:Cqrs.Bus.IEventHandlerRegistrar" /> and <see cref="T:Cqrs.Bus.ICommandHandlerRegistrar" /> if they are registered in the <see cref="T:Cqrs.Configuration.IDependencyResolver" />.
             </summary>
     </member>
-    <member name="M:Cqrs.Configuration.BusRegistrar.InvokeHandler(System.Type,Cqrs.Bus.IHandlerRegistrar,System.Func{System.Type,System.Collections.Generic.IEnumerable{System.Type}},System.Type)">
+    <member name="M:Cqrs.Configuration.BusRegistrar.InvokeHandler(System.Type,System.Boolean,System.Func{System.Type,System.Collections.Generic.IEnumerable{System.Type}},System.Type)">
       <summary>
             Extract the <see cref="M:Cqrs.Bus.IHandlerRegistrar.RegisterHandler``1(System.Action{``0},System.Type,System.Boolean)" /> method from the provided <paramref name="bus" />
             Create an <see cref="T:System.Action" /> around the provided <paramref name="executorType" />
