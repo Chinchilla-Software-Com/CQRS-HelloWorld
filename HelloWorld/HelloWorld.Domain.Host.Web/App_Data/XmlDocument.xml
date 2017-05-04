@@ -548,7 +548,7 @@
             Then enable XML documentation for all projects for both DEBUG and RELEASE builds.
             </remarks>
     </member>
-    <member name="M:HelloWorld.Domain.Akka.Controllers.HelloWorldExampleController.#ctor(cdmdotnet.Logging.ILogger,cdmdotnet.Logging.ICorrelationIdHelper,Cqrs.Authentication.IAuthenticationTokenHelper{Cqrs.Authentication.SingleSignOnToken},Cqrs.Events.IEventStore{Cqrs.Authentication.SingleSignOnToken},Cqrs.Commands.ICommandPublisher{Cqrs.Authentication.SingleSignOnToken},Cqrs.Akka.Commands.IAkkaCommandSenderProxy{Cqrs.Authentication.SingleSignOnToken},Cqrs.Services.IUnitOfWorkService,Cqrs.Repositories.Queries.IQueryFactory)">
+    <member name="M:HelloWorld.Domain.Akka.Controllers.HelloWorldExampleController.#ctor(cdmdotnet.Logging.ILogger,cdmdotnet.Logging.ICorrelationIdHelper,Cqrs.Authentication.IAuthenticationTokenHelper{Cqrs.Authentication.SingleSignOnToken},Cqrs.Events.IEventStore{Cqrs.Authentication.SingleSignOnToken},Cqrs.Akka.Commands.IAkkaCommandSenderProxy{Cqrs.Authentication.SingleSignOnToken},Cqrs.Services.IUnitOfWorkService,Cqrs.Repositories.Queries.IQueryFactory)">
       <summary>
             Instantiate a new instance of the <see cref="T:HelloWorld.Domain.Akka.Controllers.HelloWorldExampleController" /> class
             </summary>
